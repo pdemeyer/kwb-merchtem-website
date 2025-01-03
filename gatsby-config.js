@@ -9,7 +9,7 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `KWB Merchtem Portaal`,
+    title: `KWB Merchtem Portaal Site`,
     author: {
       name: `Pauwel Demeyer`,
       summary: `father, husband, engineer, musician, and occasional photographer.`,
@@ -28,6 +28,13 @@ module.exports = {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `blog`,
+        path: `${__dirname}/content/blog`,
+      }
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
