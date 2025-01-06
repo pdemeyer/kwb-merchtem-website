@@ -22,6 +22,9 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-image`,
+    `gatsby-plugin-mdx`,	
+    `gatsby-plugin-sass`,
+    'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -32,12 +35,20 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: `blog`,
-        path: `${__dirname}/content/blog`,
+        name: `nieuws`,
+        path: `${__dirname}/content/nieuws`,
       }
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: "gatsby-plugin-purgecss", // purges all unused/unreferenced css rules
+      options: {
+        develop: true, // Activates purging in npm run develop
+        purgeOnly: ['/mystyles.scss'], // applies purging only on the bulma css file
+        printRejected: true,
+      },
+    }, // must be after other CSS plugins
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
