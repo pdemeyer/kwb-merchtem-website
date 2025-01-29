@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
 import NavBar from "./NavBar";
+import Footer from './footer'
 
 import "../style/mystyles.sass"
 
@@ -31,12 +32,13 @@ const Layout = ({ pageTitle, children }) => {
   `)
 
   return (
-    <div>
+    <div class="body-v3">
        <NavBar/>
-      <main>
+      <main className="pages-wrapper">
         <h1 className={heading}>{pageTitle}</h1>
         {children}
       </main>
+      <Footer></Footer>
     </div>
   )
 }
