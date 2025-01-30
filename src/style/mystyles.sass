@@ -148,7 +148,7 @@ footer.footer
 
 .max-width-block
     width: 100%
-    max-width: 1000px
+//    max-width: 1000px
     margin: 0 auto
 //    grid-column-gap: 50px
 //    grid-row-gap: 50px
@@ -226,12 +226,14 @@ h3
   min-width: 120px
   padding: 10px
   border: 0px
+  flex: none
 
 .list-col-2
   width: 50%
   min-width: 60px
   padding: 10px
   border: 0px
+  flex: none
 
 .list-col-3:hover
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)
@@ -242,10 +244,21 @@ h3
 .post-item-title
   text-align: center
 
-.list-container 
-  display: flex
-  width: 100%
-  border: 0px
+$small: 300px
+$medium: 600px
+
+@media print, screen and (min-width: $medium)
+  .list-container
+    display: flex
+    width: 100%
+    border: 0px
+
+@media print, screen and (max-width: $medium)
+  .list-container
+    display: block
+    flex-wrap: wrap
+
+
 
 .image-49 
     aspect-ratio: 1
