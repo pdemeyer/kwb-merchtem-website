@@ -221,29 +221,6 @@ h3
     line-height: 30px
 
 
-.list-col-3
-  width: 33%
-  min-width: 120px
-  padding: 10px
-  border: 0px
-  flex: none
-
-.list-col-2
-  width: 50%
-  min-width: 60px
-  padding: 10px
-  border: 0px
-  flex: none
-
-.list-col-3:hover
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)
-
-.list-col-2:hover
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)
-
-.post-item-title
-  text-align: center
-
 $small: 300px
 $medium: 600px
 
@@ -257,6 +234,37 @@ $medium: 600px
   .list-container
     display: block
     flex-wrap: wrap
+
+.list-col-2
+  padding: 10px
+  border: 0px
+  flex: none
+
+@media print, screen and (min-width: $medium)
+  .list-col-2
+    width: 50%
+    
+@media print, screen and (max-width: $medium)
+  .list-col-2
+    width: 100%
+
+.list-col-2:hover
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)
+
+
+.list-col-3
+  width: 33%
+  padding: 10px
+  border: 0px
+  flex: none
+
+.list-col-3:hover
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)
+
+
+.post-item-title
+  text-align: center
+
 
 
 
