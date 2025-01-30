@@ -5,33 +5,34 @@ const ContactZoeker = () => {
     <div class="mainpage-content">
       <div class="max-width-block">
         <div class="main-container-div">
-            <h1 class="heading-78">Ons contacteren?</h1>
+            <h2 class="heading-78">Ons contacteren?</h2>
             <div class="list-container">
             <div class="list-col-2">
-                <a href="/reviews/homebase-foundation" class="post-picture-item">
+                <div class="post-picture-item">
                     <div class="post-text-box">
                       <div class="small-caps-text-copy"><h3 class="post-item-title">Lid worden van KWB Merchtem?</h3></div>
                       <div class="tile-heading-2 top-padding">
-                          <ul>
-                              <li>Telefoon: 03 555 55 55</li>
-                              <li>Mail:</li>
-                          </ul>
+                      Wens je lid te worden van KWB Merchtem? Laat het ons weten via een mailtje naar
+                      <br/>
+Stuur een mail naar <a href="mailto:lid@kwbmerchtem.be">lid@kwbmerchtem.be</a> en ontvang onze nieuwsbrief.
                       </div>
                     </div>
-                  </a>
+                  </div>
             </div>
             <div class="list-col-2">
-                <a href="/reviews/homebase-foundation" class="post-picture-item">
+                <div class="post-picture-item">
                     <div class="post-text-box">
                       <div class="small-caps-text-copy"><h3 class="post-item-title">Familienieuws melden</h3></div>
                       <div class="tile-heading-2 top-padding">
-                          <ul>
-                              <li>Telefoon: 03 555 55 55</li>
-                              <li>Mail:</li>
-                          </ul>
+                      <p>De familie van de KWB-er is al vele jaren een belangrijk gegeven binnen onze KWB. Een geboorte, huwelijk, overlijden, communie,... Wij willen er graag aandacht aan besteden.</p>
+                      <br/>
+                      <p>Jammer genoeg zijn we vaak niet op de hoogte van dit familienieuws. Je mag het ons steeds laten weten via familienieuws@kwbmerchtem.be. Meestal publiceren we dat familienieuws ook in ons ledenblad "de kleine raak". Indien je dat niet wenst, laat het ons dan ook weten.</p>
+<br/>
+<h3>nieuwsbrief bij een overlijden</h3>
+Indien gewenst sturen we het overlijdensbericht van een overlden (familie)lid via mail ook door naar alle leden. Stuur het overlijdensbericht door via <a href="mailto:familienieuws@kwbmerchtem.be">familienieuws@kwbmerchtem.be</a>.  Gelieve duidelijk te vermelden indien je wel of niet wenst dat dit wordt doorgestuurd naar de leden.
                       </div>
                     </div>
-                  </a>
+                  </div>
             </div>
         </div>
       </div>

@@ -1,6 +1,8 @@
 import { StaticImage } from "gatsby-plugin-image";
 import KomendeActiviteiten from "./komende-activiteiten";
+import VoorbijeActiviteiten from "./voorbije-activiteiten";
 import ListCol3Item from "./list-col-3-item";
+import ListCol2Item from "./list-col-2-item";
 import * as React from "react";
 
 const LaatsteUpdates = () => {
@@ -9,37 +11,16 @@ const LaatsteUpdates = () => {
     <div class="mainpage-content">
       <div class="max-width-block"> 
         <div class="main-container-div">
-            <h1 class="heading-78">Laatste Updates</h1>
+            <h2 class="heading-78">Laatste Updates</h2>
 
             <div class="list-container">
-               <ListCol3Item section="/komende-activiteiten" >
+               <ListCol2Item section="/komende-activiteiten" >
                   <KomendeActiviteiten />
-            </ListCol3Item>
-            <div class="list-col-3">
-               <a href="/reviews/field-dining-table" class="post-picture-item">
-                  <div class="post-text-box">
-                     <div class="small-caps-text-copy"><h3>Voorbije activiteiten</h3></div>
-                     <div class="tile-heading-2 top-padding">
-                        <ul>
-                            <li>iets</li>
-                            <li> en nog iets</li>
-                        </ul></div>
-                  </div>
-               </a>
-            </div>
-            <div class="list-col-3">
-               <a href="/reviews/field-dining-table" class="post-picture-item">
-                  <div class="post-text-box">
-                     <div class="small-caps-text-copy"><h3>Laatste nieuwtjes</h3></div>
-                     <div class="tile-heading-2 top-padding">
-                        <ul>
-                            <li>iets</li>
-                            <li> en nog iets</li>
-                        </ul></div>
-                  </div>
-               </a>
-            </div>
-            
+               </ListCol2Item>
+               <ListCol2Item section="/voorbije-activiteiten" >
+                  <VoorbijeActiviteiten />
+               </ListCol2Item>
+
          </div>
          </div>
 

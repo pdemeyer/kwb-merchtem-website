@@ -1,14 +1,14 @@
 
 import * as React from "react";
 
-const ListCol3Item = ( {section, children}) => {
+const ListCol2Item = ( {section, children}) => {
   return (
-        <div class="list-col-3">
+        <div class="list-col-2">
             <a href={section} class="post-picture-item">
-              {children}
+            {children}
                </a>
         </div>
   )
 };
 
-export default ListCol3Item;
+export default ListCol2Item;
