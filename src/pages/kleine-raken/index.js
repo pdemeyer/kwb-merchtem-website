@@ -12,11 +12,16 @@ const IndexPage = () => {
       <div class="max-width-block"> 
         <div class="main-container-div">
             
-        <div class="post-picture-picture">
-          <Link to="../../media/kr/2025/02/algklraak202502.pdf">
-          
-                        <StaticImage alt="kleine raak 202502" src="../../media/kr/2025/02/kr-202502.jpg"  class="kleine-raak-small-image"/>
-                        </Link>
+        <div class="post-text-box">
+          <a href="/media/kr/2025/02/algklraak202502.pdf">
+          <div class="post-text-box">
+                        <img alt="kleine raak 202502" src="/media/kr/2025/02/kr-202502.jpg"  
+                        class="kleine-raak-small-image"/>
+                        </div>
+                        </a>
+                        <div >
+                        Februari 2025 - nummer 
+                        </div>
                      </div>
                      </div>
                      </div>
