@@ -6,7 +6,7 @@ const MaandelijksNieuws = () => {
   return (
    <PageListSection sectionTitle={"Maandelijks Nieuws"}>
       <div class="list-col-2">
-                <a href="/reviews/homebase-foundation" class="post-picture-item">
+                <a href="/kleine-raken" class="post-picture-item">
                     <div class="post-text-box">
                       <div class="small-caps-text-copy">
                         <h3 class="post-item-title">Ons maandblad: de Kleine Raak</h3>
