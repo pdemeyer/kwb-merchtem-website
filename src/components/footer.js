@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { StaticImage } from 'gatsby-plugin-image'
 import { Link } from "gatsby";
 
-import logo from "../images/logo.svg";
+//import logo from "../images/logo.svg";
+import logo from "../images/KWB_Raak_simpel_rood.png";
 import facebook from "../images/social/facebook.svg";
 import instagram from "../images/social/instagram.svg";
 import twitter from "../images/social/twitter.svg";
@@ -16,7 +17,7 @@ const Footer = () => {
             <img
               src={logo}
               alt="kwb Merchtem"
-              style={{ width: "14em", height: "10em" }}
+              style={{ width: "14em" }}
             />
           </div>
           <div className="content has-text-centered has-background-black has-text-white-ter">

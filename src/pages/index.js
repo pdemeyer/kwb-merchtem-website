@@ -9,7 +9,7 @@ import Seo from '../components/seo'
 
 const IndexPage = () => {
   return (
-    <Layout pageTitle="">
+    <Layout pageTitle="kwb Merchtem. Beleef meer.">
       <LaatsteUpdates></LaatsteUpdates>
       <MaandelijksNieuws></MaandelijksNieuws>
       <ContactZoeker></ContactZoeker>

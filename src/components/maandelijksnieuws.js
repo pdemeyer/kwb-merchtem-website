@@ -1,13 +1,10 @@
 import * as React from "react";
 import { StaticImage } from "gatsby-plugin-image";
+import PageListSection from "./page-section";
 
 const MaandelijksNieuws = () => {
   return (
-   <div class="mainpage-content">
-   <div class="max-width-block"> 
-     <div class="main-container-div">
-      <h2 class="heading-78">Maandelijks Nieuws</h2>
-      <div class="list-container">
+   <PageListSection sectionTitle={"Maandelijks Nieuws"}>
       <div class="list-col-2">
                 <a href="/reviews/homebase-foundation" class="post-picture-item">
                     <div class="post-text-box">
@@ -34,11 +31,7 @@ const MaandelijksNieuws = () => {
                      </div>
                   </a>
             </div>
-            
-         </div>
-      </div>
-   </div>
-</div>
+   </PageListSection>
      
   );
 };

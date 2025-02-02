@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import { Link, useStaticQuery, graphql } from 'gatsby'
 
-import logo from "../images/logo.svg";
+//import logo from "../images/logo.svg";
+import logo from "../images/KWB_Raak_simpel_rood.png";
+
+
 
 /*
 import {
@@ -79,7 +82,7 @@ const NavBar = ({ pageTitle, children }) => {
           </Link>
         </li>
         <li className="navbar-item" style={{ padding: "0px" }}>
-          <Link className="navbar-item" to="/about">
+          <Link className="navbar-item" to="/over">
             Over kwb Merchtem
           </Link>
         </li>
