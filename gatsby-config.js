@@ -77,7 +77,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `KWB Merchtem App`,
-        short_name: `KWB App`,
+        short_name: `KWB Merchtem`,
         start_url: `/`,
         background_color: `#663399`,
         // This will impact how browsers show your PWA/website
