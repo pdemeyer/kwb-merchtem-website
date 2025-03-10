@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { StaticImage } from 'gatsby-plugin-image'
+import React from "react";
 import { Link } from "gatsby";
 
 //import logo from "../images/logo.svg";

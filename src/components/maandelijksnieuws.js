@@ -1,5 +1,4 @@
 import * as React from "react";
-import { StaticImage } from "gatsby-plugin-image";
 import PageListSection from "./page-section";
 
 const MaandelijksNieuws = () => {
@@ -14,7 +13,7 @@ const MaandelijksNieuws = () => {
                        <div class="tile-heading-2 top-padding"> </div>
                       </div>
                      <div class="post-picture-picture">
-                        <img alt="kleine raak 202502" src="/media/kr/2025/02/kr-202502.jpg"  
+                        <img alt="kleine raak 202503" src="/media/kr/2025/03/kr-202503.png"  
                         class="kleine-raak-small-image"/>
                      </div>
                   </a>

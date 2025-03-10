@@ -15,7 +15,7 @@ module.exports = {
       summary: `father, husband, engineer, musician, and occasional photographer.`,
     },
     description: `KWB Merchtem Portaal`,
-    siteUrl: `https://raakmerchtem.be/`,
+    siteUrl: `https://www.kwbmerchtem.be/`,
     social: {
       twitter: `pdemeyer`,
     },
@@ -48,6 +48,13 @@ module.exports = {
       options: {
         name: `activiteiten`,
         path: `${__dirname}/content/activiteiten`,
+      }
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `contact`,
+        path: `${__dirname}/content/contact`,
       }
     },
     {

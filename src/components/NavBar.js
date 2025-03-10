@@ -1,22 +1,9 @@
 import React, { useState } from "react";
-import { Link, useStaticQuery, graphql } from 'gatsby'
+import { Link } from 'gatsby'
 
 //import logo from "../images/logo.svg";
 import logo from "../images/KWB_Raak_simpel_rood.png";
 
-
-
-/*
-import {
-  container,
-  heading,
-  navLinks,
-  navLinkItem,
-  navLinkText,
-  siteTitle,
-} from './layout.module.css'
-
-*/
 const NavBar = ({ pageTitle, children }) => {
 
   const [isActive, setIsActive] = useState(false);
@@ -76,11 +63,13 @@ const NavBar = ({ pageTitle, children }) => {
             Bestuur
           </Link>
         </li>
+        {/*
         <li className="navbar-item" style={{ padding: "0px" }}>
           <Link className="navbar-item" to="/blog">
             Laatste nieuws
           </Link>
         </li>
+        */}
         <li className="navbar-item" style={{ padding: "0px" }}>
           <Link className="navbar-item" to="/over">
             Over kwb Merchtem

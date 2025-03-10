@@ -25,10 +25,10 @@ Stuur een mail naar <a href="mailto:lid@kwbmerchtem.be">lid@kwbmerchtem.be</a> e
                       <div class="small-caps-text-copy"><h3 class="post-item-title">Familienieuws melden</h3></div>
                       <div class="tile-heading-2 top-padding">
                       <p>De familie van de KWB-er is al vele jaren een belangrijk gegeven binnen onze KWB. Een geboorte, huwelijk, overlijden, communie,... Wij willen er graag aandacht aan besteden.</p>
-                      <br/>
+                      
                       <p>Jammer genoeg zijn we vaak niet op de hoogte van dit familienieuws. Je mag het ons steeds laten weten via familienieuws@kwbmerchtem.be. Meestal publiceren we dat familienieuws ook in ons ledenblad "de kleine raak". Indien je dat niet wenst, laat het ons dan ook weten.</p>
-<br/>
-<h3>nieuwsbrief bij een overlijden</h3>
+
+<h3>Nieuwsbrief bij een overlijden</h3>
 Indien gewenst sturen we het overlijdensbericht van een overlden (familie)lid via mail ook door naar alle leden. Stuur het overlijdensbericht door via <a href="mailto:familienieuws@kwbmerchtem.be">familienieuws@kwbmerchtem.be</a>.  Gelieve duidelijk te vermelden indien je wel of niet wenst dat dit wordt doorgestuurd naar de leden.
                       </div>
                     </div>

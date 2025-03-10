@@ -1,15 +1,14 @@
 import * as React from "react";
-import { graphql, useStaticQuery, StaticQuery } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image";
+import { graphql, StaticQuery } from "gatsby"
 
 const VoorbijeActiviteiten = () => (
    <StaticQuery
     query={graphql`
       query {
-        allMarkdownRemark(sort: { fields: [frontmatter___date], order: ASC }
+        allMarkdownRemark(sort: { frontmatter: {date: ASC }}
                   filter: { 
                      frontmatter: { 
-                        pagetype: { eq: "activiteiten" }
+                        pagetype: { eq: "activiteiten" },
                         date: { lt: "2025-02-01" }
             }
                   }) {

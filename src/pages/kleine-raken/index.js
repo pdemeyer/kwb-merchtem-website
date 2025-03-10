@@ -1,27 +1,26 @@
 import * as React from 'react'
 import Layout from '../../components/layout'
 import Seo from '../../components/seo'
-import { StaticImage } from "gatsby-plugin-image";
-import { Link } from 'gatsby';
 
 
 const IndexPage = () => {
   return (
-    <Layout pageTitle="Kleine raken. Het maandblad.">
+    <Layout pageTitle="Kleine raak. Het maandblad.">
           <div class="mainpage-content">
       <div class="max-width-block"> 
         <div class="main-container-div">
-            
+            <div class="center-content">
         <div class="post-text-box">
-          <a href="/media/kr/2025/02/algklraak202502.pdf">
-          <div class="post-text-box">
-                        <img alt="kleine raak 202502" src="/media/kr/2025/02/kr-202502.jpg"  
+          <a href="/media/kr/2025/03/algklraak202503.pdf">
+          <div class="post-picture-picture">
+                        <img alt="kleine raak 202503" src="/media/kr/2025/03/kr-202503.png"  
                         class="kleine-raak-small-image"/>
                         </div>
                         </a>
                         <div >
-                        Februari 2025 - nummer 
+                        Februari 2025 - nummer 544
                         </div>
+                     </div>
                      </div>
                      </div>
                      </div>
