@@ -9,7 +9,7 @@ const KomendeActiviteiten = () => (
                   filter: { 
                      frontmatter: { 
                         pagetype: { eq: "activiteiten" },
-                        date: { gt: "2025-02-01" }
+                        date: { gt: "2025-03-10" }
             }
                   }) {
           edges {
