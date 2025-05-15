@@ -11,14 +11,14 @@ const IndexPage = () => {
         <div class="main-container-div">
             <div class="center-content">
         <div class="post-text-box">
-          <a href="/media/kr/2025/04/algklraak202504.pdf">
+          <a href="/media/kr/2025/04/algklraak202505.pdf">
           <div class="post-picture-picture">
-                        <img alt="kleine raak 202504" src="/media/kr/2025/04/kr-202504.png"  
+                        <img alt="kleine raak 202505" src="/media/kr/2025/05/kr-202505.png"  
                         class="kleine-raak-small-image"/>
                         </div>
                         </a>
                         <div >
-                        April 2025 - nummer 546
+                        Mei 2025 - nummer 547
                         </div>
                      </div>
                      </div>
