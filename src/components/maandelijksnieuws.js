@@ -13,7 +13,7 @@ const MaandelijksNieuws = () => {
                        <div class="tile-heading-2 top-padding"> </div>
                       </div>
                      <div class="post-picture-picture">
-                        <img alt="kleine raak 202505" src="/media/kr/2025/05/kr-202505.png"  
+                        <img alt="kleine raak 202506" src="/media/kr/2025/05/kr-202506.png"  
                         class="kleine-raak-small-image"/>
                      </div>
                   </a>
