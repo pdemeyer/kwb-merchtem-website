@@ -18,7 +18,7 @@ const IndexPage = () => {
                         </div>
                         </a>
                         <div >
-                        Mei 2025 - nummer 547
+                        Juni 2025 - nummer 548
                         </div>
                      </div>
                      </div>
