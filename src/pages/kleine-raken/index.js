@@ -1,33 +1,55 @@
 import * as React from 'react'
 import Layout from '../../components/layout'
+import KleineRaak from "../../components/kleineraak";
+import PageGridSection from "../../components/pagegridsection";
 import Seo from '../../components/seo'
+import { graphql, StaticQuery } from "gatsby"
 
 
-const IndexPage = () => {
-  return (
-    <Layout pageTitle="Kleine raak. Het maandblad.">
-          <div class="mainpage-content">
-      <div class="max-width-block"> 
-        <div class="main-container-div">
-            <div class="center-content">
-        <div class="post-text-box">
-          <a href="/media/kr/2025/06/algklraak202506.pdf">
-          <div class="post-picture-picture">
-                        <img alt="kleine raak 202506" src="/media/kr/2025/06/kr-202506.png"  
-                        class="kleine-raak-small-image"/>
-                        </div>
-                        </a>
-                        <div >
-                        Juni 2025 - nummer 548
-                        </div>
-                     </div>
-                     </div>
-                     </div>
-                     </div>
-                     </div>
+const IndexPage = () => (
+   <StaticQuery
+      query={graphql`
+        query {
+          allMarkdownRemark(
+                    filter: { 
+                       frontmatter: { 
+                          pagetype: { eq: "kr" } }
+                       },
+                    sort:  [ { frontmatter: {jaar: DESC} },
+                             { frontmatter: {maand: DESC} } ]
+              ) {
+            edges {
+              node {
+                id
+                frontmatter {
+                  title
+                  jaar
+                  maand
+                }
+                excerpt
+              }
+            }
+          }
+        }
+      `}
+      render={data => (
+        <Layout pageTitle="Kleine raak. Het maandblad.">
+          <PageGridSection sectionTitle={"Kleine Raken"}>
+               {data.allMarkdownRemark.edges.map(({ node }) => (
+
+                <KleineRaak jaar={node.frontmatter.jaar} 
+                            maand={node.frontmatter.maand} 
+                            volgnummer={node.frontmatter.volgnummer}
+                            excerpt={node.excerpt}
+                            html={node.html}>
+                </KleineRaak>
+            ))}
+          </PageGridSection>
     </Layout>
-  )
-}
+      )}
+    />
+  
+  );
 
 export const Head = () => <Seo title="Activiteiten" />
 

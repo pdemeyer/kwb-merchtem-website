@@ -287,9 +287,14 @@ $medium: 600px
 .list-col-2:hover
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)
 
+.grid-container 
+  display: grid
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
+  gap: 30px
+
 
 .list-col-3
-  width: 33%
+  text-align: center
   padding: 10px
   border: 0px
   flex: none

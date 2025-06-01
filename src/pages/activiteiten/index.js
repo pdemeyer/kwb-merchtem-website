@@ -2,7 +2,7 @@ import * as React from 'react'
 import Layout from '../../components/layout'
 import Seo from '../../components/seo'
 import ListCol2Item from '../../components/list-col-2-item'
-import PageListSection from '../../components/page-section'
+import PageListSection from '../../components/pagelistsection'
 import KomendeActiviteiten from "../../components/komende-activiteiten";
 import VoorbijeActiviteiten from "../../components/voorbije-activiteiten";
 

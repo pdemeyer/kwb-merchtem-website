@@ -53,6 +53,13 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
+        name: `kleine-raken`,
+        path: `${__dirname}/content/kleine-raken`,
+      }
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
         name: `contact`,
         path: `${__dirname}/content/contact`,
       }

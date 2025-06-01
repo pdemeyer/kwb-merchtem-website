@@ -1,10 +1,40 @@
 import * as React from "react";
-import PageListSection from "./page-section";
+import PageListSection from "./pagelistsection";
+import Seo from './seo'
+import { graphql, StaticQuery } from "gatsby"
 
-const MaandelijksNieuws = () => {
-  return (
+const MaandelijksNieuws = () => (
+   <StaticQuery
+         query={graphql`
+           query {
+             allMarkdownRemark(
+                       filter: { 
+                          frontmatter: { 
+                             pagetype: { eq: "kr" } }
+                          },
+                       sort:  [ { frontmatter: {jaar: DESC} },
+                                { frontmatter: {maand: DESC} } ],
+                       limit: 1
+               ) {
+               edges {
+                 node {
+                   id
+                   frontmatter {
+                     title
+                     jaar
+                     maand
+                   }
+                   excerpt
+                 }
+               }
+             }
+           }
+         `}
+         render={data => (
+
    <PageListSection sectionTitle={"Maandelijks Nieuws"}>
-      <div class="list-col-2">
+      {data.allMarkdownRemark.edges.map(({ node }) => (
+            <div class="list-col-2">
                 <a href="/kleine-raken" class="post-picture-item">
                     <div class="post-text-box">
                       <div class="small-caps-text-copy">
@@ -13,11 +43,12 @@ const MaandelijksNieuws = () => {
                        <div class="tile-heading-2 top-padding"> </div>
                       </div>
                      <div class="post-picture-picture">
-                        <img alt="kleine raak 202506" src="/media/kr/2025/06/kr-202506.png"  
+                        <img alt={`kleine raak ${node.frontmatter.jaar}${node.frontmatter.maand}`} src={`/media/kr/${node.frontmatter.jaar}/${node.frontmatter.maand}/kr-${node.frontmatter.jaar}${node.frontmatter.maand}.png` }	
                         class="kleine-raak-small-image"/>
                      </div>
                   </a>
             </div>
+            ))}
             <div class="list-col-2">
                 <a href="/media/kalender/kalender-maand-per-maand.pdf" class="post-picture-item">
                 <div class="post-text-box">
@@ -32,8 +63,11 @@ const MaandelijksNieuws = () => {
                   </a>
             </div>
    </PageListSection>
-     
+   )}
+    />
+  
   );
-};
+
+export const Head = () => <Seo title="Maandelijks nieuws" />
 
 export default MaandelijksNieuws;
