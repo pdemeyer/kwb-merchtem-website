@@ -4,17 +4,18 @@ import ListCol2Item from "./list-col-2-item";
 import * as React from "react";
 import PageListSection from "./pagelistsection";
 
-const LaatsteUpdates = () => {
+const KleineRaken = ( {section, children}) => {
+
+    const { edges: kleineRaken } = props.data.allMarkdownRemark;
+
+
   return (
-    <PageListSection sectionTitle={"Laatste updates"}>
+    <PageListSection sectionTitle={"Kleine Raken"}>
       <ListCol2Item section="/activiteiten" >
-        <KomendeActiviteiten />
-      </ListCol2Item>
-      <ListCol2Item section="/activiteiten" >
-        <VoorbijeActiviteiten />
+        <KleineRaak />
       </ListCol2Item>
     </PageListSection>
   );
 };
 
-export default LaatsteUpdates;
+export default KleineRaken;

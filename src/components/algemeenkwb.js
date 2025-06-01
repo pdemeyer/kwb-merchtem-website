@@ -1,5 +1,5 @@
 import React from "react";
-import PageListSection from "./page-section";
+import PageListSection from "./pagelistsection";
 
 const AlgemeenKWB = () => {
 
