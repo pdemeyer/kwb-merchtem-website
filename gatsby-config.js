@@ -39,7 +39,16 @@ module.exports = {
         path: `${__dirname}/content`,
       }
     },
-    `gatsby-transformer-remark`,
+//    {
+//      resolve: `gatsby-plugin-mdx`,
+//      options: {
+//        extensions: [`.md`, `.mdx`],
+//      
+//      }
+//    },
+    {
+      resolve: `gatsby-transformer-remark`
+    },
     {
       resolve: `gatsby-omni-font-loader`,
       options: {

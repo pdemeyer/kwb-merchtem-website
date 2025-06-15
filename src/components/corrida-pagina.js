@@ -4,7 +4,7 @@ import { graphql, StaticQuery } from "gatsby"
 
 const CorridaQuery = graphql`
   query {
-    allMarkdownRemark(
+    allMdx(
       filter: { 
        frontmatter: { 
           pagetype: { eq: "corrida" }
@@ -34,7 +34,7 @@ const renderCorridaPage = (data) => {
   console.log(data)
   return (
     <div>
-      {data.data.allMarkdownRemark.edges.map(({ node }) => (
+      {data.data.allMdx.edges.map(({ node }) => (
       renderCorridaNode(node)
     ))}
     </div>

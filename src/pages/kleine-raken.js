@@ -1,12 +1,12 @@
 import * as React from 'react'
-import Layout from '../../components/layout'
-import KleineRaak from "../../components/kleineraak";
-import PageGridSection from "../../components/pagegridsection";
-import Seo from '../../components/seo'
+import Layout from '../components/layout'
+import KleineRaak from "../components/kleineraak";
+import PageGridSection from "../components/pagegridsection";
+import Seo from '../components/seo'
 import { graphql, StaticQuery } from "gatsby"
 
 
-const IndexPage = () => (
+const KleineRakenPage = () => (
    <StaticQuery
       query={graphql`
         query {
@@ -25,8 +25,10 @@ const IndexPage = () => (
                   title
                   jaar
                   maand
+                  volgnummer
                 }
                 excerpt
+                html
               }
             }
           }
@@ -51,6 +53,6 @@ const IndexPage = () => (
   
   );
 
-export const Head = () => <Seo title="Activiteiten" />
+export const Head = () => <Seo title="Kleine Raak" />
 
-export default IndexPage
+export default KleineRakenPage
