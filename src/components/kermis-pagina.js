@@ -4,7 +4,7 @@ import { graphql, StaticQuery } from "gatsby"
 
 const kermisQuery = graphql`
   query {
-    allMdx(
+    allMarkdownRemark(
       filter: { 
        frontmatter: { 
           pagetype: { eq: "kermis" }
@@ -33,7 +33,7 @@ const renderKermisPage = (data) => {
   console.log(data)
   return (
     <div>
-      {data.data.allMdx.edges.map(({ node }) => (
+      {data.data.allMarkdownRemark.edges.map(({ node }) => (
       renderKermisNode(node)
     ))}
     </div>
