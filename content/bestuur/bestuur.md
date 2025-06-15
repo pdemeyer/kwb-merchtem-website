@@ -3,7 +3,9 @@ title: "KWB Merchtem Bestuur"
 date: "2025-06-01"
 slug: "bestuur"
 pagetype: "bestuur"
+itemtype: "voorpagina"
 ---
+
 
 ### Maandelijks
 Elke maand komt het (dagelijks) bestuur samen. Deze bestuursleden zorgen samen met leden of wijkmeesters voor: het uitwerken van activiteiten, het bekijken van de financiële situatie, het voorbereiden van de wijkmeestersvergadering, het bespreken van werkgroepen, 
