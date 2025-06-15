@@ -1,13 +1,13 @@
-import * as React from 'react'
-import Seo from '../components/seo'
-import { graphql } from "gatsby"
 
-export const query = graphql`
+import * as React from 'react'
+import { graphql, StaticQuery } from "gatsby"
+
+const kermisQuery = graphql`
   query {
     allMarkdownRemark(
       filter: { 
        frontmatter: { 
-          pagetype: { eq: "contact" }
+          pagetype: { eq: "kermis" }
           itemtype: { eq: "voorpagina" }
         }
       }) {
@@ -26,29 +26,28 @@ export const query = graphql`
     }
   }
 }
-`
+`;
 
-
-const renderContactPage = (data) => {
+const renderKermisPage = (data) => {
+  
+  console.log(data)
   return (
     <div>
       {data.data.allMarkdownRemark.edges.map(({ node }) => (
-      renderContactNode(node)
+      renderKermisNode(node)
     ))}
     </div>
   )
 }
 
 
-const renderContactNode = (data) => {
-  console.log(data)
+const renderKermisNode = (data) => {
+  //console.log(data)
   const { frontmatter, html, timeToRead, excerpt } = data
-  console.log(frontmatter.title)
+  //console.log(frontmatter.title)
   return (
   <div>
     <h1>{frontmatter.title}</h1>
-    <small>Time to read: {timeToRead} min.</small>
-    <p>{excerpt}</p>
     <p>{frontmatter.date}</p>
     <div
       className="blog-post-content"
@@ -58,13 +57,13 @@ const renderContactNode = (data) => {
   )
 }
 
-const ContactPage = ({ data }) => (
+const KermisPagina = () => (
+  <StaticQuery query={kermisQuery} render={data => (
   <div>
-    {renderContactPage({ data })}
+    {renderKermisPage({ data })}
   </div>
-)
+)}
+ />);
 
 
-export const Head = () => <Seo title="Contacteer ons" />
-
-export default ContactPage
+export default KermisPagina;

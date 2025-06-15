@@ -5,13 +5,16 @@ const KomendeActiviteiten = () => (
    <StaticQuery
     query={graphql`
       query {
-        allMarkdownRemark(sort: { frontmatter: {date: ASC }}
-                  filter: { 
+        allMarkdownRemark(
+            sort: { frontmatter: {date: ASC }}
+            filter: { 
                      frontmatter: { 
                         pagetype: { eq: "activiteiten" },
                         date: { gt: "2025-03-30" }
-            }
-                  }) {
+                      }
+                }
+            limit: 5
+      ) {
           edges {
             node {
               id
