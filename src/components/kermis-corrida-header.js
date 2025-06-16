@@ -5,9 +5,10 @@ import PageListSection from "./pagelistsection";
 import CorridaVisual from "./corrida-visual";
 import KermisVisual from "./kermis-visual";
 
-const KermisCorridaHeader = () => {
+const KermisCorridaHeader = ({showSectionTitle}) => {
+  if (showSectionTitle) {
   return (
-    <PageListSection > {/*sectionTitle={"Kermis 2025"}*/ }
+    <PageListSection sectionTitle={"Kermis 2025"}  >
         <ListCol2Item section="/corrida" >
           <CorridaVisual />
         </ListCol2Item>
@@ -15,7 +16,19 @@ const KermisCorridaHeader = () => {
           <KermisVisual />
         </ListCol2Item>
       </PageListSection>
-  );
-};
+  )
+}
+else {
+  return (
+    <PageListSection>
+        <ListCol2Item section="/corrida" >
+          <CorridaVisual />
+        </ListCol2Item>
+        <ListCol2Item section="/kermis" >
+          <KermisVisual />
+        </ListCol2Item>
+      </PageListSection>
+  )
+}};
 
 export default KermisCorridaHeader;
