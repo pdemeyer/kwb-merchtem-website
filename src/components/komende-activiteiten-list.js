@@ -1,7 +1,7 @@
 import * as React from "react";
 import { graphql, StaticQuery } from "gatsby"
 
-const KomendeActiviteiten = () => (
+const KomendeActiviteitenList = () => (
    <StaticQuery
     query={graphql`
       query {
@@ -10,7 +10,7 @@ const KomendeActiviteiten = () => (
             filter: { 
                      frontmatter: { 
                         pagetype: { eq: "activiteiten" },
-                        date: { gt: "2025-03-30" }
+                        date: { gt: "2025-06-25" }
                       }
                 }
             limit: 5
@@ -48,4 +48,4 @@ const KomendeActiviteiten = () => (
 
    );
 
-export default KomendeActiviteiten;
+export default KomendeActiviteitenList;

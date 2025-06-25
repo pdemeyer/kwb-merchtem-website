@@ -10,7 +10,7 @@ const VoorbijeActiviteiten = () => (
             filter: { 
                      frontmatter: { 
                         pagetype: { eq: "activiteiten" },
-                        date: { lt: "2025-03-30" }
+                        date: { lt: "2025-06-25" }
                     }
                   }
             limit: 5) {

@@ -47,13 +47,21 @@ const renderCorridaNode = (data) => {
   const { frontmatter, html, timeToRead, excerpt } = data
   //console.log(frontmatter.title)
   return (
-  <div>
+  <div class="mainpage-content">
+    <div class="max-width-block"> 
+      <div class="main-container-div">
     <h1>{frontmatter.title}</h1>
     <p>{frontmatter.date}</p>
-    <div
-      className="blog-post-content"
-      dangerouslySetInnerHTML={{ __html: html }}
-    />
+    <div class="content-centerer">
+        <div class="fullwidth-item">
+          <div
+            className="post-content"
+            dangerouslySetInnerHTML={{ __html: html }}
+          />
+  </div>
+  </div>
+  </div>
+  </div>
   </div>
   )
 }

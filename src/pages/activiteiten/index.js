@@ -3,7 +3,7 @@ import Layout from '../../components/layout'
 import Seo from '../../components/seo'
 import ListCol2Item from '../../components/list-col-2-item'
 import PageListSection from '../../components/pagelistsection'
-import KomendeActiviteiten from "../../components/komende-activiteiten";
+import KomendeActiviteitenList from "../../components/komende-activiteiten-list";
 import VoorbijeActiviteiten from "../../components/voorbije-activiteiten";
 
 
@@ -12,7 +12,7 @@ const IndexPage = () => {
     <Layout pageTitle="Activiteiten.">
       <PageListSection sectionTitle={"Laatste updates"}>
       <ListCol2Item section="/activiteiten" >
-        <KomendeActiviteiten />
+        <KomendeActiviteitenList />
       </ListCol2Item>
       <ListCol2Item section="/activiteiten" >
         <VoorbijeActiviteiten />
