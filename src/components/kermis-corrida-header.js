@@ -7,6 +7,7 @@ import VisualDisplay from "./visual-display";
 
 import corridaAffiche from "../images/affiche_corrida_2025.jpeg";
 import kermisAffiche from "../images/affiche_kermis_2025.jpeg";
+import FullWidthContainer from "./fullwidth-container";
 
 const kermisAltName = "Kermis 2025";
 const corridaAltName = "Corrida 2025";
@@ -14,7 +15,8 @@ const corridaAltName = "Corrida 2025";
 const KermisCorridaHeader = ({showSectionTitle}) => {
   if (showSectionTitle) {
   return (
-    <PageListSection sectionTitle={"Kermis 2025"}  >
+    <FullWidthContainer>
+      <PageListSection sectionTitle={"Kermis 2025"}  >
         <ListCol2Item section="/corrida" >
           <VisualDisplay imgUrl={corridaAffiche} altName={corridaAltName} />
         </ListCol2Item>
@@ -22,11 +24,13 @@ const KermisCorridaHeader = ({showSectionTitle}) => {
           <VisualDisplay imgUrl={kermisAffiche} altName={kermisAltName} />
         </ListCol2Item>
       </PageListSection>
+    </FullWidthContainer>
   )
 }
 else {
   return (
-    <PageListSection>
+    <FullWidthContainer>
+      <PageListSection>
         <ListCol2Item section="/corrida" >
           <VisualDisplay imgUrl={corridaAffiche} altName={corridaAltName} />
         </ListCol2Item>
@@ -34,6 +38,7 @@ else {
           <VisualDisplay imgUrl={kermisAffiche} altName={kermisAltName} />
         </ListCol2Item>
       </PageListSection>
+    </FullWidthContainer>
   )
 }};
 

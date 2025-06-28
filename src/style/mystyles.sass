@@ -223,16 +223,15 @@ h1,h2,h3
 p
   padding-bottom: 10px
 
-$small: 300px
-$medium: 600px
+$small: 400px
+$medium: 800px
+$large: 1200px
 
 @media print, screen and (min-width: $medium)
   .list-container
     display: flex
     justify-content: center
     width: 100%
-    padding-left: 20px
-    padding-right: 20px
     border: 0px
 
 @media print, screen and (max-width: $medium)
@@ -251,31 +250,31 @@ $medium: 600px
 .content-centerer img 
   display: block
 
-@media screen and (max-width: $medium)
-  .fullwidth-item
-    padding-left: 60px
-    padding-right: 60px
 
 @media screen and (max-width: $small)
+  .fullwidth-item
+    padding-left: 10px
+    padding-right: 10px
+
+@media screen and (min-width: $small) and (max-width: $medium)
   .fullwidth-item
     padding-left: 30px
     padding-right: 30px
 
-@media screen and (min-width: $medium)
+@media screen and (min-width: $medium) and (max-width: $large)
+  .fullwidth-item
+    max-width: 80%
+    
+@media screen and (min-width: $large)
   .fullwidth-item
     max-width: 80%
     padding-left: 60px
     padding-right: 60px
 
-@media screen and (min-width: $small)
-  .fullwidth-item
-    padding-left: 30px
-    padding-right: 30px
-
 .list-col-2
-  padding-left: 40px
+  padding-left: 20px
   padding-top: 10px
-  padding-right: 40px
+  padding-right: 20px
   padding-bottom: 10px
   border: 0px
   flex: none

@@ -5,12 +5,14 @@ import ListCol2Item from '../../components/list-col-2-item'
 import PageListSection from '../../components/pagelistsection'
 import KomendeActiviteitenList from "../../components/komende-activiteiten-list";
 import VoorbijeActiviteiten from "../../components/voorbije-activiteiten";
+import FullWidthContainer from '../../components/fullwidth-container'
 
 
 const IndexPage = () => {
   return (
     <Layout pageTitle="Activiteiten.">
-      <PageListSection sectionTitle={"Laatste updates"}>
+      <FullWidthContainer>
+      <PageListSection>
       <ListCol2Item section="/activiteiten" >
         <KomendeActiviteitenList />
       </ListCol2Item>
@@ -18,6 +20,7 @@ const IndexPage = () => {
         <VoorbijeActiviteiten />
       </ListCol2Item>
     </PageListSection>
+    </FullWidthContainer>
     </Layout>
   )
 }

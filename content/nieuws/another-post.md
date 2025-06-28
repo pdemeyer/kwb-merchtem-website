@@ -1,7 +1,7 @@
 ---
 title: "Another Post"
 date: "2021-07-24"
-slug: "another-post"
+slug: "2025-07-24-blogpost"
 pagetype: "blogpost"
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Rustige Fietstocht"
 date: "2025-07-11"
-slug: "rustige-fietstocht"
+slug: "2025-07-11-rustige-fietstocht"
 pagetype: "activiteiten"
 ---
 

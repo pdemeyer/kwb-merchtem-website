@@ -2,7 +2,7 @@ import * as React from "react";
 import { graphql, StaticQuery } from "gatsby"
 import ActiviteitLink from "./activiteit-link";
 
-const KomendeActiviteitenList = () => (
+const ActiviteitenLinks = ({activiteiten}) => (
    <StaticQuery
     query={graphql`
       query {
@@ -10,8 +10,7 @@ const KomendeActiviteitenList = () => (
             sort: { frontmatter: {date: ASC }}
             filter: { 
                      frontmatter: { 
-                        pagetype: { eq: "activiteiten" },
-                        date: { gt: "2025-06-25" }
+                        pagetype: { eq: "activiteiten" }
                       }
                 }
             limit: 5
@@ -61,4 +60,4 @@ const KomendeActiviteitenList = () => (
 
    );
 
-export default KomendeActiviteitenList;
+export default ActiviteitenLinks;

@@ -1,12 +1,11 @@
 import React from "react";
 import PageListSection from "./pagelistsection";
+import FullWidthContainer from "./fullwidth-container";
 
 const AlgemeenKWB = () => {
-
   return (
     <PageListSection sectionTitle={"Wat is KWB Merchtem?"}>
-      <div class="content-centerer">
-        <div class="fullwidth-item">
+      <FullWidthContainer>
               <p>
               Met de Kristelijke WerknemersBeweging van Merchtem bereiken we maandelijks 450 leden. 
               Dit kan gebeuren door een huisbezoek van de wijkmeester, door één van onze 265 activiteiten 
@@ -22,9 +21,8 @@ const AlgemeenKWB = () => {
                 Meer info over de werking, het ledenblad "De Kleine Raak", bestuur, wijkmeesters, en 
                 inschrijvingen kan je vinden bij info.
               </p>
-              </div>
-              </div>
-      </PageListSection>
+      </FullWidthContainer>
+    </PageListSection>
   );
 };
 

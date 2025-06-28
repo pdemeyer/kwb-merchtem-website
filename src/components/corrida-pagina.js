@@ -1,6 +1,7 @@
 
 import * as React from 'react'
 import { graphql, StaticQuery } from "gatsby"
+import FullWidthContainer from './fullwidth-container'
 
 const CorridaQuery = graphql`
   query {
@@ -52,14 +53,12 @@ const renderCorridaNode = (data) => {
       <div class="main-container-div">
     <h1>{frontmatter.title}</h1>
     <p>{frontmatter.date}</p>
-    <div class="content-centerer">
-        <div class="fullwidth-item">
+    <FullWidthContainer>
           <div
             className="post-content"
             dangerouslySetInnerHTML={{ __html: html }}
           />
-  </div>
-  </div>
+  </FullWidthContainer>
   </div>
   </div>
   </div>
