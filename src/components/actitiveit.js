@@ -8,7 +8,7 @@ const Activiteit = ( {title, date, html }) => {
 
     <FullWidthContainer>
         <h1>{title}</h1>
-        <h2>{date}</h2>
+        <div class="subtitle">{date}</div>
         <div dangerouslySetInnerHTML={{ __html: html }} />
     </FullWidthContainer>
   );
