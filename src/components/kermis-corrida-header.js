@@ -17,11 +17,11 @@ const KermisCorridaHeader = ({showSectionTitle}) => {
   return (
     <FullWidthContainer>
       <PageListSection sectionTitle={"Kermis 2025"}  >
-        <ListCol2Item section="/corrida" >
-          <VisualDisplay imgUrl={corridaAffiche} altName={corridaAltName} />
+        <ListCol2Item >
+          <VisualDisplay linkTo="/corrida" imgUrl={corridaAffiche} altName={corridaAltName} />
         </ListCol2Item>
-        <ListCol2Item section="/kermis" >
-          <VisualDisplay imgUrl={kermisAffiche} altName={kermisAltName} />
+        <ListCol2Item  >
+          <VisualDisplay linkTo="/kermis" imgUrl={kermisAffiche} altName={kermisAltName} />
         </ListCol2Item>
       </PageListSection>
     </FullWidthContainer>
@@ -31,11 +31,11 @@ else {
   return (
     <FullWidthContainer>
       <PageListSection>
-        <ListCol2Item section="/corrida" >
-          <VisualDisplay imgUrl={corridaAffiche} altName={corridaAltName} />
+        <ListCol2Item >
+          <VisualDisplay linkTo="/corrida" imgUrl={corridaAffiche} altName={corridaAltName} />
         </ListCol2Item>
-        <ListCol2Item section="/kermis" >
-          <VisualDisplay imgUrl={kermisAffiche} altName={kermisAltName} />
+        <ListCol2Item >
+          <VisualDisplay linkTo="/kermis" imgUrl={kermisAffiche} altName={kermisAltName} />
         </ListCol2Item>
       </PageListSection>
     </FullWidthContainer>

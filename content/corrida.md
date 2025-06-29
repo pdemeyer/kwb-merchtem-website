@@ -27,19 +27,34 @@ We hebben een speciale internet-kassa. Hier verwachten we je voor de betaling en
 * Stap 2: Ga met je eID kaart (identiteitskaart) en borstnummer naar één van de inschrijvingstafels om je borstnummer te laten registreren.
 Inschrijven kan ter plaatse vanaf 17.20u. in de sporthal
 
-+---------+-------------------------------+-------+------+
-|18.00 u.	|Kinderjogging (-6 jaar)	      |400 m	|5 EUR
-+---------+-------------------------------+-------+------+
-|18.10 u.	|Kinderjogging (6-7 jaar)	      |500 m	|5 EUR
-+---------+-------------------------------+-------+------+
-|18.20 u.	|Kinderjogging (8 tot 12 jaar)	|700 m	|5 EUR
-+---------+-------------------------------+-------+------+
-|18.30 u.	|Jogging 	                      |3 km	  |7 EUR
-+---------+-------------------------------+-------+------+
-|18.30 u.	|Jogging - de jogging van 3 en 6 km wordt op hetzelfde ogenblik gelopen. De jogging van 3 km vertrekt ongeveer 4 minuten na de jogging van 6 km.	                               |6 km	 |10 EUR
-+---------+-------------------------------+-------+------+
-|19.30 u.	|Corrida	                      |12 km  |10 EUR
-+---------+-------------------------------+-------+------+
+### Uurschema
+> - **18.00 u**
+    Kinderjogging (-6 jaar)
+    400 m
+    € 5 
+> - **18.10 u**	
+    Kinderjogging (6-7 jaar)	      
+    500 m	
+    € 5 
+> - **18.20 u**	
+    Kinderjogging (8 tot 12 jaar)	
+    700 m	
+    € 5
+> - **18.30 u**	
+    Jogging 
+    3 km
+    € 7
+> - **18.30 u**	
+    Jogging 	
+    6 km
+    € 10
+_De jogging van 3 en 6 km wordt op hetzelfde ogenblik gelopen._
+_De jogging van 3 km vertrekt ongeveer 4 minuten na de jogging van 6 km._
+> - **19.30 u**	
+    Corrida	  
+    12 km
+    € 10
 
-gelieve gepast cash geld mee te brengen, ofwel payconiq te gebruiken.
+### Betaling ter plaatse
+Gelieve gepast cash geld mee te brengen, ofwel Payconiq te gebruiken.
 Er is voor de 6 en de 12 km een waterstand voorzien onderweg.

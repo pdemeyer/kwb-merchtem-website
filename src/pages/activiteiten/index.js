@@ -1,26 +1,12 @@
 import * as React from 'react'
 import Layout from '../../components/layout'
 import Seo from '../../components/seo'
-import ListCol2Item from '../../components/list-col-2-item'
-import PageListSection from '../../components/pagelistsection'
-import KomendeActiviteitenList from "../../components/komende-activiteiten-list";
-import VoorbijeActiviteiten from "../../components/voorbije-activiteiten";
-import FullWidthContainer from '../../components/fullwidth-container'
-
+import ActiviteitenOverzicht from '../../components/activiteitenoverzicht'
 
 const IndexPage = () => {
   return (
-    <Layout pageTitle="Activiteiten.">
-      <FullWidthContainer>
-      <PageListSection>
-      <ListCol2Item section="/activiteiten" >
-        <KomendeActiviteitenList />
-      </ListCol2Item>
-      <ListCol2Item section="/activiteiten" >
-        <VoorbijeActiviteiten />
-      </ListCol2Item>
-    </PageListSection>
-    </FullWidthContainer>
+    <Layout showLogo="1" pageTitle="Activiteiten.">
+      <ActiviteitenOverzicht />
     </Layout>
   )
 }

@@ -1,11 +1,9 @@
 
 import FullWidthContainer from "./fullwidth-container";
-import ListCol3Item from "./list-col-3-item";
 import * as React from "react";
 
 const Activiteit = ( {title, date, html }) => {
   return (
-
     <FullWidthContainer>
         <h1>{title}</h1>
         <div class="subtitle">{date}</div>

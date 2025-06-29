@@ -1,7 +1,7 @@
 ---
 title: "Ra(a)ke vrijdag: Artificiële Intelligentie"
 date: "2025-03-28"
-slug: "raake-vrijdag-ai"
+slug: "20025-03-28-raake-vrijdag-ai"
 pagetype: "activiteiten"
 ---
 

@@ -2,6 +2,7 @@ import * as React from "react";
 import PageListSection from "./pagelistsection";
 import Seo from './seo'
 import { graphql, StaticQuery } from "gatsby"
+import FullWidthContainer from "./fullwidth-container";
 
 const MaandelijksNieuws = () => (
    <StaticQuery
@@ -31,8 +32,9 @@ const MaandelijksNieuws = () => (
            }
          `}
          render={data => (
-
+<FullWidthContainer>
    <PageListSection sectionTitle={"Maandelijks Nieuws"}>
+      
       {data.allMarkdownRemark.edges.map(({ node }) => (
             <div class="list-col-2">
                 <a href="/kleine-raken" class="post-picture-item">
@@ -63,6 +65,7 @@ const MaandelijksNieuws = () => (
                   </a>
             </div>
    </PageListSection>
+            </FullWidthContainer>
    )}
     />
   

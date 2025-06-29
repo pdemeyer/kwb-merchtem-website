@@ -1,6 +1,7 @@
 
 import * as React from 'react'
 import { graphql, StaticQuery } from "gatsby"
+import FullWidthContainer from './fullwidth-container';
 
 const kermisQuery = graphql`
   query {
@@ -42,17 +43,17 @@ const renderKermisPage = (data) => {
 
 
 const renderKermisNode = (data) => {
-  //console.log(data)
-  const { frontmatter, html, timeToRead, excerpt } = data
-  //console.log(frontmatter.title)
+  const { frontmatter, html } = data
   return (
   <div>
     <h1>{frontmatter.title}</h1>
     <p>{frontmatter.date}</p>
+    <FullWidthContainer>
     <div
       className="blog-post-content"
       dangerouslySetInnerHTML={{ __html: html }}
     />
+    </FullWidthContainer>
   </div>
   )
 }

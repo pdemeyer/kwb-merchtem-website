@@ -1,7 +1,8 @@
 import * as React from "react";
 import { graphql, StaticQuery } from "gatsby"
+import ActiviteitenLinks from "./activiteiten-links";
 
-const VoorbijeActiviteiten = () => (
+const VoorbijeActiviteitenList = () => (
    <StaticQuery
     query={graphql`
       query {
@@ -10,15 +11,17 @@ const VoorbijeActiviteiten = () => (
             filter: { 
                      frontmatter: { 
                         pagetype: { eq: "activiteiten" },
-                        date: { lt: "2025-06-25" }
-                    }
-                  }
-            limit: 5) {
+                        date: { lte: "2025-06-25" }
+                      }
+                }
+            limit: 5
+      ) {
           edges {
             node {
               id
               frontmatter {
                 title
+                slug
                 date(formatString: "DD/MM/YYYY")
               }
               excerpt
@@ -28,24 +31,26 @@ const VoorbijeActiviteiten = () => (
       }
     `}
     render={data => (
-      <div>
-        <h3>Voorbije activiteiten</h3>
-        <ul>
-          {data.allMarkdownRemark.edges.map(({ node }) => (
-            <li key={node.id}>
-              {node.frontmatter.date} || {node.frontmatter.title}
-              {/*
-              <p>{node.frontmatter.date}</p>
-              <p>{node.excerpt}</p>
-              */}
-            </li>
-          ))}
-        </ul>
-      </div>
+      <ActiviteitenLinks activiteiten={data.allMarkdownRemark.edges} titel="Voorbije activiteiten" />
     )}
   />
 
    );
 
 
-export default VoorbijeActiviteiten;
+
+   /*
+       <div>
+        <h3>Komende activiteiten</h3>
+        <ul>
+          {data.allMarkdownRemark.edges.map(({ node }) => (
+            <li key={node.id}>
+              <ActiviteitLink slug={`/activiteiten/${node.frontmatter.slug}`}
+                title={node.frontmatter.title} date={node.frontmatter.date} ></ActiviteitLink>
+            </li>
+          ))}
+        </ul>
+      </div>
+       */
+
+export default VoorbijeActiviteitenList;

@@ -1,7 +1,7 @@
 ---
 title: "Fietsrally - volzet!!"
 date: "2025-06-29"
-slug: "fietsrally"
+slug: "2025-06-29-fietsrally"
 pagetype: "activiteiten"
 ---
 

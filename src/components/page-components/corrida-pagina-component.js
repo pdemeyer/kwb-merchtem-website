@@ -1,8 +1,8 @@
 
 import * as React from 'react'
 import { graphql, StaticQuery } from "gatsby"
-import FullWidthContainer from './fullwidth-container'
-
+import MarkDownPageComponent from './markdown-page-component'
+ 
 const CorridaQuery = graphql`
   query {
     allMarkdownRemark(
@@ -30,9 +30,25 @@ const CorridaQuery = graphql`
 `
 
 
+const CorridaPaginaComponent = () => (
+  <StaticQuery query={CorridaQuery} render={data => (
+  <div>
+    <MarkDownPageComponent data={data} />
+    
+  </div>
+)} />
+);
+
+export default CorridaPaginaComponent;
+
+
+/*
+ 
+    {renderCorridaPage({ data })}
+*/
+
+/*
 const renderCorridaPage = (data) => {
-  
-  console.log(data)
   return (
     <div>
       {data.data.allMarkdownRemark.edges.map(({ node }) => (
@@ -64,14 +80,4 @@ const renderCorridaNode = (data) => {
   </div>
   )
 }
-
-const CorridaPagina = () => (
-  <StaticQuery query={CorridaQuery} render={data => (
-  <div>
-    {renderCorridaPage({ data })}
-  </div>
-)}
- />);
-
-
-export default CorridaPagina;
+*/
