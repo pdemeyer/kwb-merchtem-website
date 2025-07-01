@@ -4,8 +4,8 @@ import FullWidthContainer from "./fullwidth-container";
  
 const ContactZoeker = () => {
   return (
-    <PageListSection sectionTitle={"Ons contacteren?"}>
       <FullWidthContainer>
+    <PageListSection sectionTitle={"Ons contacteren?"}>
             <div class="list-container">
             <div class="list-col-2">
                 <div class="post-picture-item">
@@ -35,8 +35,8 @@ Indien gewenst sturen we het overlijdensbericht van een overlden (familie)lid vi
                   </div>
             </div>
         </div>
-      </FullWidthContainer>
     </PageListSection>
+      </FullWidthContainer>
   );  
 };
 
