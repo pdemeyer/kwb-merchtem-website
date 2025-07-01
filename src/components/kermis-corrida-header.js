@@ -16,9 +16,14 @@ const KermisCorridaHeader = ({showSectionTitle}) => {
   if (showSectionTitle) {
   return (
     <FullWidthContainer>
-      <PageListSection sectionTitle={"Kermis 2025"}  >
+      <PageListSection sectionTitle={"Kermis en Corrida 2025"}  >
         <ListCol2Item >
           <VisualDisplay linkTo="/corrida" imgUrl={corridaAffiche} altName={corridaAltName} />
+        </ListCol2Item>
+        <ListCol2Item >
+          <div>
+            een beetje meer info over de corrida 2025
+          </div>
         </ListCol2Item>
         <ListCol2Item  >
           <VisualDisplay linkTo="/kermis" imgUrl={kermisAffiche} altName={kermisAltName} />

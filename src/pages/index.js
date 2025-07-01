@@ -11,7 +11,7 @@ const IndexPage = () => {
   return (
     <Layout showLogo="1" pageTitle="kwb Merchtem. Beleef meer.">
       <ActiviteitenOverzicht />
-      <KermisCorridaHeader />
+      <KermisCorridaHeader showSectionTitle="1" />
       <MaandelijksNieuws />
       <ContactZoeker />
       <AlgemeenKwbComponent />
