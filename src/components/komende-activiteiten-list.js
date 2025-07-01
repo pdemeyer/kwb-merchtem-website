@@ -11,7 +11,7 @@ const KomendeActiviteitenList = () => (
             filter: { 
                      frontmatter: { 
                         pagetype: { eq: "activiteiten" },
-                        date: { gt: "2025-06-25" }
+                        date: { gt: "2025-07-01" }
                       }
                 }
             limit: 5

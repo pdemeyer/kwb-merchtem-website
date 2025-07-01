@@ -1,5 +1,5 @@
 ---
-title: "Fietsrally - volzet!!"
+title: "Fietsrally"
 date: "2025-06-29"
 slug: "2025-06-29-fietsrally"
 pagetype: "activiteiten"
@@ -7,4 +7,4 @@ pagetype: "activiteiten"
 
 Fietsrally bij KWB om 13u30.
 
-sorry volzet
+Vrij vertrekken aan de lagere school St Donatus.

@@ -7,13 +7,14 @@ itemtype: "voorpagina"
 ---
 KWB Merchtem organiseert weer de corrida bij de start van Merchtem Kermis!
 
-
 ## Corrida en (kinder)jogging
 Vrijdag 15 augustus 2025
 sporthal Merchtem (Dendermondestraat)
 
+<p id="inschrijven"/>
+
 ### Inschrijven
-vooraf online inschrijven kan tot 14 augustus.
+Vooraf online inschrijven kan tot 14 augustus.
 Nadien kan je enkel nog inschrijven ter plaatse.
 Inschrijven kan op voorhand via het formulier hier onder:
 
@@ -26,6 +27,8 @@ We hebben een speciale internet-kassa. Hier verwachten we je voor de betaling en
 * Stap 1: Ga naar de kassa: zeg aan welke wedstrijd je wilt deelnemen, je betaalt en krijgt hier ook je borstnummer.
 * Stap 2: Ga met je eID kaart (identiteitskaart) en borstnummer naar één van de inschrijvingstafels om je borstnummer te laten registreren.
 Inschrijven kan ter plaatse vanaf 17.20u. in de sporthal
+
+<p id="uurschema"/>
 
 ### Uurschema
 > - **18.00 u**
