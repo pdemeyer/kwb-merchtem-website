@@ -64,6 +64,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
    // `gatsby-plugin-mdx`, // Add gatsby-plugin-mdx
+   'gatsby-plugin-build-date',
     `gatsby-plugin-sharp`,
     {
       resolve: "gatsby-plugin-purgecss", // purges all unused/unreferenced css rules

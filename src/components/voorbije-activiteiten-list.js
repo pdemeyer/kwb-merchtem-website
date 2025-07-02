@@ -10,11 +10,9 @@ const VoorbijeActiviteitenList = () => (
             sort: { frontmatter: {date: DESC }}
             filter: { 
                      frontmatter: { 
-                        pagetype: { eq: "activiteiten" },
-                        date: { lte: "2025-07-01" }
+                        pagetype: { eq: "activiteiten" }
                       }
                 }
-            limit: 5
       ) {
           edges {
             node {
@@ -22,7 +20,7 @@ const VoorbijeActiviteitenList = () => (
               frontmatter {
                 title
                 slug
-                date(formatString: "DD/MM/YYYY")
+                date
               }
               excerpt
             }
@@ -30,16 +28,40 @@ const VoorbijeActiviteitenList = () => (
         }
       }
     `}
-    render={data => (
-      <ActiviteitenLinks activiteiten={data.allMarkdownRemark.edges} titel="Voorbije activiteiten" />
-    )}
-  />
+    render={data => {
+      const { edges } = data.allMarkdownRemark;
+      if (!edges || edges.length === 0) {
+        return <p>Er zijn momenteel geen voorbije activiteiten.</p>;
+      }
+      
+      const currentDate = new Date();
 
+      // Filter eerst voor voorbije activiteiten
+      const voorbijeActiviteiten = edges
+      .filter(({ node }) => {
+        const activiteitDate = new Date(node.frontmatter.date);
+        return activiteitDate < currentDate;
+      })
+      .slice(0, 5) // Beperk tot de laatste 5 voorbije activiteiten
+      //.map(({ node }) =>  { if (new Date(node.frontmatter.date) >= currentDate) { return "true" } });
+      
+      console.log("Voorbije activiteiten:", voorbijeActiviteiten);
+      return <ActiviteitenLinks activiteiten={voorbijeActiviteiten} titel="Voorbije activiteiten" />
+    }}
+  />
    );
 
 
 
    /*
+        <div >Voorbije edges: {voorbijeActiviteiten.length}</div>
+
+.toLocaleString("nl-BE")
+
+   (formatString: "DD/MM/YYYY")
+
+
+
        <div>
         <h3>Komende activiteiten</h3>
         <ul>
