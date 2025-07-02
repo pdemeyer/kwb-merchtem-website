@@ -22,7 +22,7 @@ const KermisCorridaHeader = ({showSectionTitle}) => {
         </ListCol2Item>
         <ListCol2Item >
           <div>
-            <h3>Corrida vrijdag 15/08/2025</h3>
+            <h3>Corrida vrijdag 15/08: inschrijven</h3>
             <p>De Corrida is een hardloopwedstrijd die plaatsvindt op vrijdagavond, 15 augustus 2025. 
               Deelnemers kunnen zich <a href="/corrida#inschrijven">inschrijven</a> voor <a href="/corrida#uurschema">verschillende afstanden</a> en genieten van een feestelijke sfeer met muziek en entertainment.</p>
             <p>Meer informatie over de Corrida vind je op de <a href="/corrida">Corrida pagina</a>.</p>

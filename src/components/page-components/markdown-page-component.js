@@ -15,14 +15,12 @@ const renderNode = (data) => {
   const { frontmatter, html } = data
   return (
   <div class="mainpage-content">
-    <div class="max-width-block"> 
       <div class="main-container-div">
     <h1>{frontmatter.title}</h1>
     <p>{frontmatter.date}</p>
     <FullWidthContainer>
           <div className="post-content" dangerouslySetInnerHTML={{ __html: html }} />
   </FullWidthContainer>
-  </div>
   </div>
   </div>
   )

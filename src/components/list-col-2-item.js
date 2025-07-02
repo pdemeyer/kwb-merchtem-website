@@ -8,9 +8,4 @@ const ListCol2Item = ( {children}) => {
   )
 };
 
-
-/*
- post-picture-item
-*/
-
 export default ListCol2Item;

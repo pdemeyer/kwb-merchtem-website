@@ -20,7 +20,7 @@ const KomendeActiviteitenList = () => (
               frontmatter {
                 title
                 slug
-                date(formatString: "DD/MM/YYYY")
+                date
               }
               excerpt
             }
@@ -52,3 +52,9 @@ const KomendeActiviteitenList = () => (
 );
 
 export default KomendeActiviteitenList;
+
+
+/*
+
+{komendeActiviteiten.length}
+*/

@@ -176,25 +176,25 @@ footer.footer
   overflow: hidden
 
 .mainpage-content
-  padding-top: 10px
+  padding-top: 0px
   padding-bottom: 10px
   align: center
   --light-light-gray: #91919724
   border-bottom: 1px solid var(--light-light-gray)
-  display: flex
+//  display: flex
   justify-content: center
   align-items: center
 
 .heading-78 
   text-align: center
-  margin-top: 10px
+//  margin-top: 10px
 
 //  font-family: Alegreya variablefont wght, Times New Roman, sans-serif
 
 h1 
     clear: none
     text-align: center
-    margin-top: 20px
+    margin-top: 10px
     margin-bottom: 10px
     font-size: 30px
     font-weight: 400
@@ -230,7 +230,7 @@ h1,h2,h3
 p
   padding-bottom: 10px
 
-$small: 400px
+$small: 600px
 $medium: 800px
 $large: 1200px
 
@@ -254,8 +254,8 @@ $large: 1200px
   justify-content: center
   width: 100%
 
-.content-centerer img 
-  display: block
+//.content-centerer img 
+//  display: block
 
 
 @media screen and (max-width: $small)
@@ -265,18 +265,16 @@ $large: 1200px
 
 @media screen and (min-width: $small) and (max-width: $medium)
   .fullwidth-item
-    padding-left: 30px
-    padding-right: 30px
+    padding-left: 0px
+    padding-right: 0px
 
 @media screen and (min-width: $medium) and (max-width: $large)
   .fullwidth-item
-    max-width: 80%
+    width: 90%
     
 @media screen and (min-width: $large)
   .fullwidth-item
-    max-width: 80%
-    padding-left: 60px
-    padding-right: 60px
+    width: 80%
 
 .list-col-2
   padding-left: 20px
