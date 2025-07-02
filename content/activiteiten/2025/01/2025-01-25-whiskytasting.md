@@ -1,7 +1,7 @@
 ---
 title: "Whisky tasting"
 date: "2025-01-25"
-slug: "another-post"
+slug: "2025-01-25-whisky-tasting"
 pagetype: "activiteiten"
 ---
 

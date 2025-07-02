@@ -33,36 +33,21 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-transformer-remark`,
-      options: {},
-    },
-    {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: `nieuws`,
-        path: `${__dirname}/content/nieuws`,
+        name: `all-content`,
+        path: `${__dirname}/content`,
       }
     },
+//    {
+//      resolve: `gatsby-plugin-mdx`,
+//      options: {
+//        extensions: [`.md`, `.mdx`],
+//      
+//      }
+//    },
     {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: `activiteiten`,
-        path: `${__dirname}/content/activiteiten`,
-      }
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: `kleine-raken`,
-        path: `${__dirname}/content/kleine-raken`,
-      }
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: `contact`,
-        path: `${__dirname}/content/contact`,
-      }
+      resolve: `gatsby-transformer-remark`
     },
     {
       resolve: `gatsby-omni-font-loader`,
@@ -78,6 +63,8 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
+   // `gatsby-plugin-mdx`, // Add gatsby-plugin-mdx
+   'gatsby-plugin-build-date',
     `gatsby-plugin-sharp`,
     {
       resolve: "gatsby-plugin-purgecss", // purges all unused/unreferenced css rules

@@ -2,6 +2,8 @@ import * as React from "react";
 import PageListSection from "./pagelistsection";
 import Seo from './seo'
 import { graphql, StaticQuery } from "gatsby"
+import FullWidthContainer from "./fullwidth-container";
+import ImageLink from "./ImageLink";
 
 const MaandelijksNieuws = () => (
    <StaticQuery
@@ -31,9 +33,47 @@ const MaandelijksNieuws = () => (
            }
          `}
          render={data => (
-
+<FullWidthContainer>
    <PageListSection sectionTitle={"Maandelijks Nieuws"}>
+      
+
       {data.allMarkdownRemark.edges.map(({ node }) => (
+        <ImageLink 
+          link="/kleine-raken" 
+          imgAltText="Kleine Raak" 
+          imgUrl={`/media/kr/${node.frontmatter.jaar}/${node.frontmatter.maand}/kr-${node.frontmatter.jaar}${node.frontmatter.maand}.png`}
+          key={node.id}
+          title="Ons maandblad: de Kleine Raak" >
+        </ImageLink>
+            ))}
+            <div class="list-col-2">
+              <a href="/media/kalender/kalender-maand-per-maand.pdf" class="post-picture-item">
+                <div class="post-text-box">
+                  <div class="small-caps-text-copy">
+                    <h3 class="post-item-title">Volledige kalender om te downloaden</h3>
+                  </div>
+                  <div class="tile-heading-2 top-padding"> </div>
+                </div>
+                <div class="post-picture-picture">
+                  <img alt="kalender 2024-2025" src="/media/kalender/kalender-maand-per-maand.jpg"  class="kleine-raak-small-image"/>
+                </div>
+              </a>
+            </div>
+   </PageListSection>
+            </FullWidthContainer>
+   )}
+    />
+  
+  );
+
+export const Head = () => <Seo title="Maandelijks nieuws" />
+
+export default MaandelijksNieuws;
+
+
+
+/*
+
             <div class="list-col-2">
                 <a href="/kleine-raken" class="post-picture-item">
                     <div class="post-text-box">
@@ -48,26 +88,4 @@ const MaandelijksNieuws = () => (
                      </div>
                   </a>
             </div>
-            ))}
-            <div class="list-col-2">
-                <a href="/media/kalender/kalender-maand-per-maand.pdf" class="post-picture-item">
-                <div class="post-text-box">
-                      <div class="small-caps-text-copy">
-                        <h3 class="post-item-title">Volledige kalender om te downloaden</h3>
-                       </div>
-                       <div class="tile-heading-2 top-padding"> </div>
-                      </div>
-                     <div class="post-picture-picture">
-                        <img alt="kalender 2024-2025" src="/media/kalender/kalender-maand-per-maand.jpg"  class="kleine-raak-small-image"/>
-                     </div>
-                  </a>
-            </div>
-   </PageListSection>
-   )}
-    />
-  
-  );
-
-export const Head = () => <Seo title="Maandelijks nieuws" />
-
-export default MaandelijksNieuws;
+*/

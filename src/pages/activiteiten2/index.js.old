@@ -1,0 +1,57 @@
+import * as React from 'react'
+import Layout from '../../components/layout'
+import Seo from '../../components/seo'
+import FullWidthContainer from '../../components/fullwidth-container'
+import ActiviteitenLinks from '../../components/activiteiten-links'
+
+
+const IndexPage = ({
+  data: {
+    allMarkdownRemark: { edges },
+  },
+}) => {
+  const komendeActiviteiten = edges.filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
+
+  return (
+    <Layout pageTitle="Activiteiten.">
+      <FullWidthContainer>
+        <ActiviteitenLinks activiteiten={komendeActiviteiten  } />
+    </FullWidthContainer>
+    </Layout>
+  )
+}
+
+/*
+.map(edge => <PostLink key={edge.node.id} post={edge.node} />)
+*/
+
+export const Head = () => <Seo title="Activiteiten" />
+
+export const pageQuery = graphql`
+  query {
+        allMarkdownRemark(
+            sort: { frontmatter: {date: ASC }}
+            filter: { 
+                     frontmatter: { 
+                        pagetype: { eq: "activiteiten" },
+                        date: { gt: "2025-06-25" }
+                      }
+                }
+            limit: 5
+      ) {
+          edges {
+            node {
+              id
+              frontmatter {
+                title
+                slug
+                date(formatString: "DD/MM/YYYY")
+              }
+              excerpt
+            }
+          }
+        }
+      }
+`
+
+export default IndexPage

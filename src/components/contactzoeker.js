@@ -1,11 +1,11 @@
 import * as React from "react";
-
+import PageListSection from "./pagelistsection";
+import FullWidthContainer from "./fullwidth-container";
+ 
 const ContactZoeker = () => {
   return (
-    <div class="mainpage-content">
-      <div class="max-width-block">
-        <div class="main-container-div">
-            <h2 class="heading-78">Ons contacteren?</h2>
+      <FullWidthContainer>
+    <PageListSection sectionTitle={"Ons contacteren?"}>
             <div class="list-container">
             <div class="list-col-2">
                 <div class="post-picture-item">
@@ -35,11 +35,9 @@ Indien gewenst sturen we het overlijdensbericht van een overlden (familie)lid vi
                   </div>
             </div>
         </div>
-      </div>
-    </div>
-    </div>
-     
-  );
+    </PageListSection>
+      </FullWidthContainer>
+  );  
 };
 
 export default ContactZoeker;

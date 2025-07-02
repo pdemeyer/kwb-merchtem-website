@@ -1,14 +1,12 @@
+
 import * as React from 'react'
-import Layout from '../../components/layout'
-import KleineRaak from "../../components/kleineraak";
-import PageGridSection from "../../components/pagegridsection";
-import Seo from '../../components/seo'
 import { graphql, StaticQuery } from "gatsby"
+import KleineRaak from "../kleineraak";
+import PageGridSection from "../pagegridsection";
+import FullWidthContainer from '../fullwidth-container';
 
 
-const IndexPage = () => (
-   <StaticQuery
-      query={graphql`
+const KleineRakenQuery = graphql`
         query {
           allMarkdownRemark(
                     filter: { 
@@ -25,16 +23,19 @@ const IndexPage = () => (
                   title
                   jaar
                   maand
+                  volgnummer
                 }
                 excerpt
+                html
               }
             }
           }
         }
-      `}
-      render={data => (
-        <Layout pageTitle="Kleine raak. Het maandblad.">
-          <PageGridSection sectionTitle={"Kleine Raken"}>
+      `;
+
+const KleineRakenPaginaComponent = () => (
+  <StaticQuery query={KleineRakenQuery} render={data => (
+    <PageGridSection sectionTitle={"Kleine Raken"}>
                {data.allMarkdownRemark.edges.map(({ node }) => (
 
                 <KleineRaak jaar={node.frontmatter.jaar} 
@@ -45,12 +46,7 @@ const IndexPage = () => (
                 </KleineRaak>
             ))}
           </PageGridSection>
-    </Layout>
-      )}
-    />
-  
-  );
+)}
+ />);
 
-export const Head = () => <Seo title="Activiteiten" />
-
-export default IndexPage
+export default KleineRakenPaginaComponent;
