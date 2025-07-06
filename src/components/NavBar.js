@@ -31,6 +31,7 @@ const NavBar = ({ pageTitle, children }) => {
           <span />
           <span />
           <span />
+          <span />
         </button>
       </div>
       <ul
@@ -65,13 +66,13 @@ const NavBar = ({ pageTitle, children }) => {
             Corrida
           </Link>
         </li>
-        {/*
+        {
         <li className="navbar-item" style={{ padding: "0px" }}>
-          <Link className="navbar-item" to="/blog">
-            Laatste nieuws
+          <Link className="navbar-item" to="/nieuws">
+            Nieuws
           </Link>
         </li>
-        */}
+        }
         <li className="navbar-item" style={{ padding: "0px" }}>
           <Link className="navbar-item" to="/over">
             Over kwb Merchtem

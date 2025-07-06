@@ -29,13 +29,9 @@ const OverQuery = graphql`
 }
 `
 
-
 const OverPaginaComponent = () => (
   <StaticQuery query={OverQuery} render={data => (
-  <div>
     <MarkDownPageComponent data={data} />
-    
-  </div>
 )} />
 );
 

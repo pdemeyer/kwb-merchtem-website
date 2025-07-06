@@ -4,13 +4,13 @@ import MaandelijksNieuws from '../components/maandelijksnieuws'
 import ContactZoeker from '../components/contactzoeker'
 import KermisCorridaHeader from '../components/kermis-corrida-header'
 import Seo from '../components/seo'
-import ActiviteitenOverzicht from '../components/activiteitenoverzicht'
+import LaatsteNieuwsOverzicht from '../components/laatstenieuws'
 import AlgemeenKwbComponent from '../components/algemeenkwb-component'
 
 const IndexPage = () => {
   return (
     <Layout showLogo="1" pageTitle="kwb Merchtem. Beleef meer.">
-      <ActiviteitenOverzicht />
+      <LaatsteNieuwsOverzicht  />
       <KermisCorridaHeader showSectionTitle="1" />
       <MaandelijksNieuws />
       <ContactZoeker />
