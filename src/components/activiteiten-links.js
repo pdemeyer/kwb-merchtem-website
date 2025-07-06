@@ -1,10 +1,10 @@
 import * as React from "react";
 import ActiviteitLink from "./activiteit-link";
 
-const ActiviteitenLinks = ({activiteiten, titel}) => {
+const ActiviteitenLinks = ({activiteiten, titel, showTitle}) => {
   return (
       <div>
-        <h3>{titel}</h3>
+        { showTitle && <h3>{titel}</h3> }
         <ul>
           {activiteiten.map(({ node }) => (
             <li key={node.id}>

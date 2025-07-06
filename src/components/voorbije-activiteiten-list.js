@@ -46,7 +46,7 @@ const VoorbijeActiviteitenList = () => (
       //.map(({ node }) =>  { if (new Date(node.frontmatter.date) >= currentDate) { return "true" } });
       
       console.log("Voorbije activiteiten:", voorbijeActiviteiten);
-      return <ActiviteitenLinks activiteiten={voorbijeActiviteiten} titel="Voorbije activiteiten" />
+      return <ActiviteitenLinks activiteiten={voorbijeActiviteiten} showTitle={true} titel="Voorbije activiteiten" />
     }}
   />
    );
