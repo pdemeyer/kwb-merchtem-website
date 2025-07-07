@@ -1,12 +1,12 @@
 import * as React from 'react'
 import Layout from '../components/layout'
 import Seo from '../components/seo'
-import BestuurPagina from "../components/bestuur-pagina";
+import BestuurPaginaComponent from '../components/page-components/bestuur-pagina-component';
 
 const BestuurPage = () => {
   return (
     <Layout pageTitle="Bestuur KWB Merchtem.">
-      <BestuurPagina />
+        <BestuurPaginaComponent />
     </Layout>
   )
 }

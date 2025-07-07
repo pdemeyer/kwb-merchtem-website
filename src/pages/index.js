@@ -1,19 +1,20 @@
 import * as React from 'react'
 import Layout from '../components/layout'
-import LaatsteUpdates from '../components/laatsteupdates'
 import MaandelijksNieuws from '../components/maandelijksnieuws'
 import ContactZoeker from '../components/contactzoeker'
-import AlgemeenKWB from '../components/algemeenkwb'
+import KermisCorridaHeader from '../components/kermis-corrida-header'
 import Seo from '../components/seo'
-
+import LaatsteNieuwsOverzicht from '../components/laatstenieuws'
+import AlgemeenKwbComponent from '../components/algemeenkwb-component'
 
 const IndexPage = () => {
   return (
     <Layout showLogo="1" pageTitle="kwb Merchtem. Beleef meer.">
-      <LaatsteUpdates></LaatsteUpdates>
-      <MaandelijksNieuws></MaandelijksNieuws>
-      <ContactZoeker></ContactZoeker>
-      <AlgemeenKWB></AlgemeenKWB>
+      <LaatsteNieuwsOverzicht  />
+      <KermisCorridaHeader showSectionTitle="1" />
+      <MaandelijksNieuws />
+      <ContactZoeker />
+      <AlgemeenKwbComponent />
     </Layout>
   )
 }

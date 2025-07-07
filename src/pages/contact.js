@@ -1,65 +1,16 @@
 import * as React from 'react'
 import Seo from '../components/seo'
-import { graphql } from "gatsby"
+import ContactPaginaComponent from '../components/page-components/contact-pagina-component'
+import Layout from '../components/layout'
 
-export const query = graphql`
-  query {
-    allMarkdownRemark(
-      filter: { 
-       frontmatter: { 
-          pagetype: { eq: "contact" }
-          itemtype: { eq: "voorpagina" }
-        }
-      }) {
-    edges {
-      node {
-        id
-        frontmatter {
-          title
-          pagetype
-          itemtype
-        }
-        excerpt
-        html
-        timeToRead
-      }
-    }
-  }
-}
-`
-
-
-const renderContactPage = (data) => {
+const ContactPage = () => {
   return (
-    <div>
-      {data.data.allMarkdownRemark.edges.map(({ node }) => (
-      renderContactNode(node)
-    ))}
-    </div>
+    <Layout showLogo="1" pageTitle="Contacteer ons">
+      <ContactPaginaComponent />
+    </Layout>
   )
 }
-
-
-const renderContactNode = (data) => {
-  const { frontmatter, html, timeToRead, excerpt } = data
-  return (
-  <div>
-    <h1>{frontmatter.title}</h1>
-    <div
-      className="blog-post-content"
-      dangerouslySetInnerHTML={{ __html: html }}
-    />
-  </div>
-  )
-}
-
-const ContactPage = ({ data }) => (
-  <div>
-    {renderContactPage({ data })}
-  </div>
-)
-
-
+ 
 export const Head = () => <Seo title="Contacteer ons" />
 
 export default ContactPage

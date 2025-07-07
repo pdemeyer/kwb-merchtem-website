@@ -2,6 +2,7 @@
 import ListCol3Item from "./list-col-3-item";
 import * as React from "react";
 
+
 const KleineRaak = ( {jaar, maand, volgnummer, html, excerpt, children}) => {
   return (
     <ListCol3Item section="/kleine-raken" >
