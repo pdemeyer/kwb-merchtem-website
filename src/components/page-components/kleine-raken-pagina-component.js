@@ -1,10 +1,7 @@
-
 import * as React from 'react'
 import { graphql, StaticQuery } from "gatsby"
 import KleineRaak from "../kleineraak";
 import PageGridSection from "../pagegridsection";
-import FullWidthContainer from '../fullwidth-container';
-
 
 const KleineRakenQuery = graphql`
         query {
