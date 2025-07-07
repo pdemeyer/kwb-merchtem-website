@@ -10,7 +10,7 @@ const IndexPage = () => {
     <Layout showLogo="1" pageTitle="Nieuws.">
       <FullWidthContainer>
       <PageListSection sectionTitle={"Laatste Nieuws."}>
-      <LaatsteNieuwsOverzicht />
+        <LaatsteNieuwsOverzicht />
       </PageListSection>
       </FullWidthContainer>
     </Layout>
