@@ -49,6 +49,7 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`
     },
+    `gatsby-plugin-decap-cms`,
     {
       resolve: `gatsby-omni-font-loader`,
       options: {
@@ -63,7 +64,6 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
-   // `gatsby-plugin-mdx`, // Add gatsby-plugin-mdx
    'gatsby-plugin-build-date',
     `gatsby-plugin-sharp`,
     {

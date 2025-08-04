@@ -12,6 +12,6 @@ const OverPage = () => {
   )
 }
 
-export const Head = () => <Seo title="About Me" />
+export const Head = () => <Seo title="Over KWB" />
 
 export default OverPage

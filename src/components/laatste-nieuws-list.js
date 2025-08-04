@@ -7,7 +7,7 @@ const LaatsteNieuwsList = ({showTitle}) => (
     query={graphql`
       query {
         allMarkdownRemark(
-            sort: { frontmatter: {date: ASC }}
+            sort: { frontmatter: {date: DESC }}
             filter: { 
                      frontmatter: { 
                         pagetype: { eq: "nieuws" },
@@ -36,16 +36,20 @@ const LaatsteNieuwsList = ({showTitle}) => (
 
       const nieuwtjes = edges
       .filter(({ node }) => {
-        const featureUntilDate = new Date(node.frontmatter.featureUntil);
-        return featureUntilDate >= currentDate;
-      })
+        if ( node.frontmatter.featureUntil) { 
+          const featureUntilDate = new Date(node.frontmatter.featureUntil);
+          return featureUntilDate >= currentDate;
+        }
+        else {
+          return true; // Geen featureUntil betekent dat het altijd zichtbaar is
+        }
+      }
+      )
+      .slice(0, 5) // Beperk tot de 5 laatste nieuwtjes
 
       if (!nieuwtjes || nieuwtjes.length === 0) {
         return <p>Er is momenteel geen nieuws te melden.</p>;
       }
-      
-      //.slice(0, 5) // Beperk tot de eerste 5 komende activiteiten
-      //.map(({ node }) =>  { if (new Date(node.frontmatter.date) >= currentDate) { return "true" } });
       
       return <ActiviteitenLinks activiteiten={nieuwtjes} titel="Nieuwtjes" showTitle={showTitle} />
     }
