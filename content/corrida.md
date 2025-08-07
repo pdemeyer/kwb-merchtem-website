@@ -54,18 +54,18 @@ Gelieve gepast cash geld mee te brengen, ofwel Payconiq te gebruiken.
     Kinderjogging (8 tot 12 jaar)	
     700 m	
     € 5
-> - **18.30 u**	
+> - **18.30 u**	- [Parcours 3 km](/media/kermis/2025/corrida-omloop-3km.pdf)
     Jogging 
     3 km
     € 7
-> - **18.30 u**	
+> - **18.30 u**	- [Parcours 6 km](/media/kermis/2025/corrida-omloop-6km.pdf)
     Jogging 	
     6 km
     € 10
 _De jogging van 3 en 6 km wordt op hetzelfde ogenblik gelopen._
 _De jogging van 3 km vertrekt ongeveer 4 minuten na de jogging van 6 km._
 _Er is voor de 6 en de 12 km een waterstand voorzien onderweg._
-> - **19.30 u**	
+> - **19.30 u**	- [Parcours 12 km](/media/kermis/2025/corrida-omloop-12km.pdf)
     Corrida	  
     12 km
     € 10
