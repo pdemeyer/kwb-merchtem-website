@@ -8,7 +8,7 @@ itemtype: "voorpagina"
 KWB Merchtem organiseert weer de corrida bij de start van Merchtem Kermis!
 
 <div style="font-size: 24px; text-align: center;">
-<a href="#inschrijven">Inschrijven</a>  -|- <a href="#betaling">Betalen</a> -|- <a href="#uurschema">Uurschema</a>
+<a href="#inschrijven">Inschrijven</a>  -|- <a href="#betaling">Betalen</a> -|- <a href="#uurschema">Uurschema</a>  -|- <a href="/corrida/uitslagen">Uitslagen</a>
 </div>
 
 ## Corrida en (kinder)jogging
