@@ -18,9 +18,8 @@ sporthal Merchtem (Dendermondestraat)
 <p id="inschrijven"/>
 
 ### Inschrijven
-Vooraf online inschrijven kan tot 14 augustus. Nadien kan dit nog ter plaatse vanaf 17.20u. in de sporthal van Merchtem.
-Nadien kan je enkel nog inschrijven ter plaatse.
-Inschrijven kan op voorhand via het formulier hieronder.
+Vooraf online inschrijven kan tot 13 augustus. Nadien kan dit nog ter plaatse op 15 augustus vanaf 17.20u. in de sporthal van Merchtem. 
+Opgelet: de online inschrijvingen zijn afgesloten. Kom je toch graag mee lopen? Schrijf je dan in op 15 augustus vanaf 17.20u in de sporthal van Merchtem.
 
 ### Wat moet je de dag van de corrida nog doen als je vooraf hebt ingeschreven?
 We hebben een speciale internet-kassa. Hier verwachten we je voor de betaling en voor het afhalen van je nummer. Alles is in één keer geregeld.
@@ -28,11 +27,13 @@ We hebben een speciale internet-kassa. Hier verwachten we je voor de betaling en
 ### Wat moet je de dag van de corrida nog doen als je niet vooraf hebt ingeschreven?
 * Stap 1: Ga naar de kassa: zeg aan welke wedstrijd je wilt deelnemen, je betaalt en krijgt hier ook je borstnummer.
 * Stap 2: Ga met je eID kaart (identiteitskaart) en borstnummer naar één van de inschrijvingstafels om je borstnummer te laten registreren.
-**Inschrijven kan ter plaatse vanaf 17.20u. in de sporthal**
-
+**Inschrijven kan vanaf nu enkel ter plaatse vanaf 17.20u. in de sporthal**
+<!--
 <iframe width="640px" height="600px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__pyqwcdUREM2T044SlFVSFlNQktBWUJaMk85VzFVNi4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
 
 Geen invulformulier te zien? Klik [hier](https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__pyqwcdUREM2T044SlFVSFlNQktBWUJaMk85VzFVNi4u&embed=true).
+
+-->
 
 <p id="betaling" />
 
