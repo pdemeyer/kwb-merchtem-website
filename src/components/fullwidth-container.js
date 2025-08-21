@@ -2,8 +2,8 @@ import * as React from 'react'
 
 const FullWidthContainer = ( {title, date, html, children }) => {
   return (
-    <div class="content-centerer">
-        <div class="fullwidth-item">
+    <div className="content-centerer">
+        <div className="fullwidth-item">
             {children}
         </div>
     </div>

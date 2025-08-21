@@ -23,7 +23,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-image`,
     `gatsby-plugin-mdx`,	
-    `gatsby-plugin-sass`,
+    //`gatsby-plugin-sass`,
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-source-filesystem`,
@@ -49,7 +49,6 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`
     },
-    `gatsby-plugin-decap-cms`,
     {
       resolve: `gatsby-omni-font-loader`,
       options: {
@@ -66,6 +65,8 @@ module.exports = {
     `gatsby-transformer-sharp`,
    'gatsby-plugin-build-date',
     `gatsby-plugin-sharp`,
+    'gatsby-plugin-postcss',
+    /*
     {
       resolve: "gatsby-plugin-purgecss", // purges all unused/unreferenced css rules
       options: {
@@ -74,6 +75,7 @@ module.exports = {
         printRejected: true,
       },
     }, // must be after other CSS plugins
+    */
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

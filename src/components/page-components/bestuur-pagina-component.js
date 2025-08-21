@@ -2,6 +2,7 @@
 import * as React from 'react'
 import { graphql, StaticQuery } from "gatsby"
 import MarkDownPageComponent from './markdown-page-component';
+import { Button } from "@material-tailwind/react";
 
 const BestuurQuery = graphql`
   query {

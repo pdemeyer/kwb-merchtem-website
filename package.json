@@ -10,7 +10,9 @@
   "dependencies": {
     "@fontsource-variable/montserrat": "^5.0.17",
     "@fontsource/merriweather": "^5.0.8",
+    "@material-tailwind/react": "^2.1.10",
     "@mdx-js/react": "^2.3.0",
+    "@tailwindcss/postcss": "^4.1.12",
     "bulma": "^1.0.3",
     "date-and-time": "^3.6.0",
     "gatsby": "^5.14.6",
@@ -21,9 +23,8 @@
     "gatsby-plugin-manifest": "^5.14.0",
     "gatsby-plugin-mdx": "^5.14.1",
     "gatsby-plugin-offline": "^6.14.0",
-    "gatsby-plugin-purgecss": "^6.2.1",
+    "gatsby-plugin-postcss": "^6.14.0",
     "gatsby-plugin-react-helmet": "^6.14.0",
-    "gatsby-plugin-sass": "^6.14.0",
     "gatsby-plugin-sharp": "^5.14.0",
     "gatsby-remark-copy-linked-files": "^6.14.0",
     "gatsby-remark-images": "^7.14.0",
@@ -33,12 +34,13 @@
     "gatsby-source-filesystem": "^5.14.0",
     "gatsby-transformer-remark": "^6.14.0",
     "gatsby-transformer-sharp": "^5.14.0",
+    "postcss": "^8.5.6",
     "prismjs": "^1.29.0",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "react-helmet": "^6.1.0",
     "remark-grid-tables": "^2.2.2",
-    "sass": "^1.83.1"
+    "tailwindcss": "^4.1.12"
   },
   "devDependencies": {
     "prettier": "^2.8.8"
