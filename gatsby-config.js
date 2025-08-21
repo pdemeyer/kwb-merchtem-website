@@ -49,7 +49,6 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`
     },
-    `gatsby-plugin-decap-cms`,
     {
       resolve: `gatsby-omni-font-loader`,
       options: {
