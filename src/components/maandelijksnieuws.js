@@ -47,7 +47,7 @@ const MaandelijksNieuws = () => (
         </ImageLink>
             ))}
             <div class="list-col-2">
-              <a href="/media/kalender/kalender-maand-per-maand.pdf" class="post-picture-item">
+              <a href="/media/kalender/2025-kalender-maand-per-maand.pdf" class="post-picture-item">
                 <div class="post-text-box">
                   <div class="small-caps-text-copy">
                     <h3 class="post-item-title">Volledige kalender om te downloaden</h3>
@@ -55,7 +55,7 @@ const MaandelijksNieuws = () => (
                   <div class="tile-heading-2 top-padding"> </div>
                 </div>
                 <div class="post-picture-picture">
-                  <img alt="kalender 2024-2025" src="/media/kalender/kalender-maand-per-maand.jpg"  class="kleine-raak-small-image"/>
+                  <img alt="kalender 2024-2025" src="/media/kalender/2025-kalender-maand-per-maand.jpg"  class="kleine-raak-small-image"/>
                 </div>
               </a>
             </div>
