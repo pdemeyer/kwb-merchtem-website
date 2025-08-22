@@ -23,7 +23,6 @@ module.exports = {
   plugins: [
     `gatsby-plugin-image`,
     `gatsby-plugin-mdx`,	
-    //`gatsby-plugin-sass`,
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-source-filesystem`,
@@ -63,19 +62,11 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
-   'gatsby-plugin-build-date',
+    'gatsby-plugin-build-date',
     `gatsby-plugin-sharp`,
     'gatsby-plugin-postcss',
-    /*
-    {
-      resolve: "gatsby-plugin-purgecss", // purges all unused/unreferenced css rules
-      options: {
-        develop: true, // Activates purging in npm run develop
-        purgeOnly: ['/mystyles.scss'], // applies purging only on the bulma css file
-        printRejected: true,
-      },
-    }, // must be after other CSS plugins
-    */
+
+    
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -90,6 +81,7 @@ module.exports = {
         icon: `src/images/favicon.jpg`, // This path is relative to the root of the site.
       },
     },
+
     `gatsby-plugin-offline`
   ],
 }

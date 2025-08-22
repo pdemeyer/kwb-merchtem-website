@@ -11,12 +11,13 @@ import instagram from "../images/social/instagram.svg";
 const FooterWithLogo = () => {
 
     return (
+
         <footer className='w-full footer py-12 pt-24  px-8'>
            <div className='flex flex-col justify-between items-center border-b-[1px] md:px-12 pb-8 border-b-purple-200 mb-8'>
-               <Typography className='font-poppins text-2xl font-semibold text-white mb-8'>
+               <Typography className='font-poppins text-2xl font-semibold text-red mb-8'>
                    Do you want to know more or just have any questions? write to us.
                </Typography>
-               <Button size='lg' color='red' className='text-white'>
+               <Button size='lg' color='red' className='text-red'>
                    Contact Us
                </Button>
            </div>

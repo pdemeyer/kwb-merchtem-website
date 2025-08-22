@@ -8,19 +8,11 @@ import LaatsteNieuwsList from "./laatste-nieuws-list";
 
 const LaatsteNieuwsOverzicht = () => {
   return (
-    <FullWidthContainer>
-      <PageListSection sectionTitle={"Laatste updates"}>
-        <ListCol2Item section="/activiteiten" >
-         <KomendeActiviteitenList />
-       </ListCol2Item>
-        <ListCol2Item section="/activiteiten" >
-          <VoorbijeActiviteitenList />
-        </ListCol2Item>
-        <ListCol2Item section="/nieuws" >
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6 max-w-screen-xl mx-auto">
+         <KomendeActiviteitenList showTitle={true} />
+          <VoorbijeActiviteitenList showTitle={true} />
           <LaatsteNieuwsList showTitle={true} />
-        </ListCol2Item>
-      </PageListSection>
-    </FullWidthContainer>
+        </div>
   );
 };
 

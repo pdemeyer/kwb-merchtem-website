@@ -1,29 +1,29 @@
 import * as React from 'react'
-//import NavBar from "./NavBar";
 import NavbarWithSearch from './navbar-with-search'
 import FooterWithLogo from './footer-with-logo'
 
-//import "../style/mystyles.sass"
-
 import hoofdLogo from "../images/KWB_Raak_rood_geel.png";
+import TopNavbar from './TopNavBar';
+import { Typography } from '@material-tailwind/react';
 
 
 const Layout = ({ pageTitle, showLogo=false, children }) => {
 
   return (
-    <div >
-       <NavbarWithSearch></NavbarWithSearch>
-       <main className="pages-wrapper">
-        { showLogo && 
-        <div className="content-centerer">
-          <img src={hoofdLogo} alt="kwb Merchtem" style={{ height: "100px" }}  />
-        </div> 
+    <main className="pages-wrapper">
+       <TopNavbar></TopNavbar>
+    
+      <div className="w-full bg-gradient-to-b from-blue-600 to-gray-200 py-12 flex justify-center items-center">
+        <figure>
+      { showLogo && 
+          <img src={hoofdLogo} alt="kwb Merchtem" className="h-24 w-auto" />
         }
-        <h1>{pageTitle}</h1>
-        {children}
-      </main>
+      <Typography variant="h1" color="white" >{pageTitle}</Typography>
+      </figure>
+      </div> 
+      {children}
       <FooterWithLogo></FooterWithLogo>
-    </div>
+    </main>
   )
 }
 

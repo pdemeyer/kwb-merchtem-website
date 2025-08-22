@@ -1,32 +1,28 @@
-import * as React from 'react'
-import Layout from '../components/layout'
-import MaandelijksNieuws from '../components/maandelijksnieuws'
-import ContactZoeker from '../components/contactzoeker'
-import KermisCorridaHeader from '../components/kermis-corrida-header'
-import Seo from '../components/seo'
-import LaatsteNieuwsOverzicht from '../components/laatstenieuws'
-import AlgemeenKwbComponent from '../components/algemeenkwb-component'
-import NavbarWithSearch from '../components/navbar-with-search'
-import { Button } from "@material-tailwind/react";
+import * as React from "react"
+import { NavbarDark } from "../components/navbar-dark";
+
+import { ThemeProvider, Button } from "@material-tailwind/react";
+import Layout from "../components/layout";
+import LaatsteNieuwsOverzicht from "../components/laatstenieuws";
+import KermisCorridaHeader from "../components/kermis-corrida-header";
+import MaandelijksNieuws from "../components/maandelijksnieuws";
+import ContactZoeker from "../components/contactzoeker";
+import AlgemeenKwbComponent from "../components/algemeenkwb-component";
+import Seo from "../components/seo";
+
 
 const IndexPage = () => {
   return (
-    /*
-    <div className="bg-red-800 text-white p-4">
-    <Button>Test me!</Button>
-    </div>
-    */
-    
     <Layout showLogo="1" pageTitle="kwb Merchtem. Beleef meer.">
-      <LaatsteNieuwsOverzicht  />
+      <LaatsteNieuwsOverzicht />
       <KermisCorridaHeader showSectionTitle="1" />
       <MaandelijksNieuws />
       <ContactZoeker />
       <AlgemeenKwbComponent />
     </Layout>
-    
-  )
+  );
 }
+
 
 export const Head = () => <Seo title="Home Page" />
 

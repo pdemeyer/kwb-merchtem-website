@@ -1,16 +1,24 @@
 
 import React from "react"
+
+import {
+  Typography
+} from "@material-tailwind/react";
+
 import { Link } from "gatsby"
 
 const ActiviteitLink = ({key, slug, title, date }) => {
   // Format the date to a more readable format
   const activiteitDate = new Date(date).toLocaleDateString(("nl-BE"));
 
-  return <div>
-    <Link to={`/activiteiten/${slug}`}>
-     {activiteitDate}  ||  {title} 
-    </Link>
-  </div>
+  return <Typography
+                  key={title}
+                  as={Link}
+                  to={`/activiteiten/${slug}`}
+                  className="text-gray-500 hover:text-red-400 transition-colors font-medium"
+                >
+                  {activiteitDate}  ||  {title} 
+                </Typography>
 }
 
 export default ActiviteitLink

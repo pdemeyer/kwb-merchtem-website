@@ -7,16 +7,10 @@ import FullWidthContainer from "./fullwidth-container";
 
 const ActiviteitenOverzicht = () => {
   return (
-    <FullWidthContainer>
-      <PageListSection sectionTitle={"Laatste updates"}>
-        <ListCol2Item section="/activiteiten" >
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 p-6 max-w-screen-xl mx-auto">
          <KomendeActiviteitenList />
-       </ListCol2Item>
-        <ListCol2Item section="/activiteiten" >
           <VoorbijeActiviteitenList />
-        </ListCol2Item>
-      </PageListSection>
-    </FullWidthContainer>
+    </div>
   );
 };
 
