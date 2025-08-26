@@ -4,9 +4,10 @@
  * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/
  */
 
-/**
- * @type {import('gatsby').GatsbySSR['onRenderBody']}
- */
-exports.onRenderBody = ({ setHtmlAttributes }) => {
-    setHtmlAttributes({ lang: `en` })
-  }
+import React from "react";
+import { ThemeProvider } from "@material-tailwind/react";
+import { theme } from "./src/theme";
+
+export const wrapRootElement = ({ element }) => {
+  return <ThemeProvider value={theme}>{element}</ThemeProvider>;
+};

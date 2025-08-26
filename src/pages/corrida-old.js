@@ -1,5 +1,5 @@
 import * as React from 'react'
-import Layout from '../components/layout'
+import Layout from '../components/cards/layout'
 import Seo from '../components/seo'
 import CorridaPaginaComponent from "../components/page-components/corrida-pagina-component";
 import KermisCorridaHeader from '../components/kermis-corrida-header';

@@ -1,5 +1,5 @@
 import * as React from 'react'
-import Layout from '../components/layout'
+import Layout from '../components/cards/layout'
 import Seo from '../components/seo'
 import BestuurPaginaComponent from '../components/page-components/bestuur-pagina-component';
 
