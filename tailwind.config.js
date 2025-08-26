@@ -5,7 +5,13 @@ module.exports = {
     "./node_modules/@material-tailwind/react/components/**/*.{js,ts,jsx,tsx}",
     "./node_modules/@material-tailwind/react/theme/components/**/*.{js,ts,jsx,tsx}",
   ],
-  theme: {},
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ['"Radio Canada Big"', 'ui-sans-serif', 'system-ui'],
+      },
+    },
+  },
   plugins: [],
 };
 

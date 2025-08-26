@@ -1,7 +1,6 @@
 import * as React from 'react'
 import { graphql, StaticQuery } from "gatsby"
 import KleineRaak from "../kleineraak";
-import PageGridSection from "../pagegridsection";
 
 const KleineRakenQuery = graphql`
         query {
@@ -32,7 +31,7 @@ const KleineRakenQuery = graphql`
 
 const KleineRakenPaginaComponent = () => (
   <StaticQuery query={KleineRakenQuery} render={data => (
-    <PageGridSection sectionTitle={"Kleine Raken"}>
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6 max-w-screen-xl mx-auto">
                {data.allMarkdownRemark.edges.map(({ node }) => (
 
                 <KleineRaak jaar={node.frontmatter.jaar} 
@@ -42,7 +41,7 @@ const KleineRakenPaginaComponent = () => (
                             html={node.html}>
                 </KleineRaak>
             ))}
-          </PageGridSection>
+    </div>
 )}
  />);
 

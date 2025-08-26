@@ -15,6 +15,7 @@
     "@mdx-js/react": "^2.3.0",
     "@tailwindcss/postcss": "^4.1.12",
     "bulma": "^1.0.3",
+    "clsx": "^2.1.1",
     "date-and-time": "^3.6.0",
     "gatsby": "^5.14.6",
     "gatsby-omni-font-loader": "^2.0.2",

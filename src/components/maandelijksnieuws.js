@@ -1,9 +1,8 @@
 import * as React from "react";
-import PageListSection from "./pagelistsection";
 import Seo from './seo'
 import { graphql, StaticQuery } from "gatsby"
 import FullWidthContainer from "./fullwidth-container";
-import ImageLink from "./ImageLink";
+import { HorizontalCard } from "./cards/horizontal-card";
 
 const MaandelijksNieuws = () => (
    <StaticQuery
@@ -33,59 +32,33 @@ const MaandelijksNieuws = () => (
            }
          `}
          render={data => (
-<FullWidthContainer>
-   <PageListSection sectionTitle={"Maandelijks Nieuws"}>
-      
-
+    <FullWidthContainer isBgFilled={true}>
       {data.allMarkdownRemark.edges.map(({ node }) => (
-        <ImageLink 
-          link="/kleine-raken" 
-          imgAltText="Kleine Raak" 
+
+        <HorizontalCard 
+          cardHeaderTitle="Ons maandblad: de Kleine Raak" 
+          contentTitle="Maandelijks Nieuws" 
           imgUrl={`/media/kr/${node.frontmatter.jaar}/${node.frontmatter.maand}/kr-${node.frontmatter.jaar}${node.frontmatter.maand}.png`}
-          key={node.id}
-          title="Ons maandblad: de Kleine Raak" >
-        </ImageLink>
-            ))}
-            <div class="list-col-2">
-              <a href="/media/kalender/2025-kalender-maand-per-maand.pdf" class="post-picture-item">
-                <div class="post-text-box">
-                  <div class="small-caps-text-copy">
-                    <h3 class="post-item-title">Volledige kalender om te downloaden</h3>
-                  </div>
-                  <div class="tile-heading-2 top-padding"> </div>
-                </div>
-                <div class="post-picture-picture">
-                  <img alt="kalender 2024-2025" src="/media/kalender/2025-kalender-maand-per-maand.jpg"  class="kleine-raak-small-image"/>
-                </div>
-              </a>
-            </div>
-   </PageListSection>
-            </FullWidthContainer>
+          linkUrl="/kleine-raken"
+          linkText={"Download" }
+          className="h-50"
+        />
+        ))}
+
+        <HorizontalCard 
+          cardHeaderTitle="Kalender 2025-2026"
+          contentTitle="Volledige kalender om te downloaden"
+          imgUrl="/media/kalender/2025-kalender-maand-per-maand.jpg"
+          linkUrl="/media/kalender/2025-kalender-maand-per-maand.pdf"
+          linkText={"Download" }  
+          className="h-50"
+        />
+
+    </FullWidthContainer>
    )}
     />
-  
   );
 
 export const Head = () => <Seo title="Maandelijks nieuws" />
 
 export default MaandelijksNieuws;
-
-
-
-/*
-
-            <div class="list-col-2">
-                <a href="/kleine-raken" class="post-picture-item">
-                    <div class="post-text-box">
-                      <div class="small-caps-text-copy">
-                        <h3 class="post-item-title">Ons maandblad: de Kleine Raak</h3>
-                       </div>
-                       <div class="tile-heading-2 top-padding"> </div>
-                      </div>
-                     <div class="post-picture-picture">
-                        <img alt={`kleine raak ${node.frontmatter.jaar}${node.frontmatter.maand}`} src={`/media/kr/${node.frontmatter.jaar}/${node.frontmatter.maand}/kr-${node.frontmatter.jaar}${node.frontmatter.maand}.png` }	
-                        class="kleine-raak-small-image"/>
-                     </div>
-                  </a>
-            </div>
-*/

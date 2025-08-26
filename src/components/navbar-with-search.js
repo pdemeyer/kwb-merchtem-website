@@ -20,6 +20,7 @@ import {
 //import logo from "../images/logo.svg";
 import logo from "../images/KWB_Raak_simpel_rood.png";
 
+/*
 const LINKS = [
   {
     icon: MultiplePages,
@@ -53,7 +54,6 @@ function NavList() {
   );
 }
 
-
 function NavItem({ label }) {
   return (
     <a href="#">
@@ -63,10 +63,12 @@ function NavItem({ label }) {
     </a>
   );
 }
+  
+*/
 
 export function NavbarWithSearch() {
   const [open, setOpen] = React.useState(false);
-  const handleOpen = () => setOpen((cur) => !cur);
+  //const handleOpen = () => setOpen((cur) => !cur);
 
   React.useEffect(() => {
     window.addEventListener(

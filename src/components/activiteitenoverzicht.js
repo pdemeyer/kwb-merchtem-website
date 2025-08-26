@@ -1,9 +1,6 @@
 import KomendeActiviteitenList from "./komende-activiteiten-list";
 import VoorbijeActiviteitenList from "./voorbije-activiteiten-list";
-import ListCol2Item from "./list-col-2-item";
-import * as React from "react";
-import PageListSection from "./pagelistsection";
-import FullWidthContainer from "./fullwidth-container";
+import React from "react";
 
 const ActiviteitenOverzicht = () => {
   return (

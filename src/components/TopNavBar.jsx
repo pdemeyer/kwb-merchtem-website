@@ -6,7 +6,6 @@ import {
   IconButton,
 } from "@material-tailwind/react";
 
-
 import logo from "../images/KWB_Raak_simpel_rood.png";
 
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
@@ -28,7 +27,7 @@ export default function TopNavbar() {
   ];
 
   return (
-    <Navbar className="mx-auto max-w-screen-xl px-4 py-2 shadow-md bg-white border-b border-gray-200">
+    <Navbar className="border-none shadow-none rounded-none mx-auto max-w-screen-xl px-4 py-2 ">
       <div className="flex items-center justify-between">
         <Link to="/" title="Logo" className="text-xl font-bold text-red-600">
           <img src={logo} alt="kwb Merchtem" style={{ width: "88px" }} />
@@ -58,7 +57,7 @@ export default function TopNavbar() {
         </IconButton>
       </div>
       <Collapse open={openNav}>
-        <div className={`${openNav ? 'block' : 'hidden'} flex flex-col gap-4 mt-4 lg:hidden p-4 rounded-lg`}>
+        <div className={`${openNav ? 'block' : 'hidden'} flex flex-col gap-4 mt-4 lg:hidden p-4 `}>
           {navItems.map(({ label, path }) => (
             <Typography
               key={label}

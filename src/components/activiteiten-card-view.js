@@ -1,26 +1,35 @@
 import * as React from "react";
 import { useActiviteiten } from "../hooks/use-activiteiten";
-import { Link } from "gatsby";
-
-import {
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
-  Typography,
-  Button,
-  List,
-  ListItem,
-} from "@material-tailwind/react";
+import { ActiviteitSimpleCard } from "./cards/activiteit-simple-card";
 
 const ActiviteitenCardView = () => {
-  const data = useActiviteiten();
+const data = useActiviteiten();
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6 max-w-screen-xl mx-auto">
           { data &&
              data.map(({node : post}) => (
-              <Card className="mt-6 w-96 rounded-lg hover:shadow-lg" key={post.id}>
+              <ActiviteitSimpleCard
+                key={post.id}
+                id={post.id}
+                titel={post.frontmatter.title}
+                datum={post.frontmatter.date}
+                excerpt={post.excerpt}  
+                link={post.frontmatter.slug}
+                isFeatured={post.frontmatter.featuredpost}
+              />
+             ))
+            }
+    </div>
+  );
+};
+
+export default ActiviteitenCardView;
+
+
+
+/*
+<Card className="mt-6 w-96 rounded-lg hover:shadow-lg" key={post.id}>
               <CardBody key={post.id} className={`blog-list-item tile is-child box notification ${
                 post.frontmatter.featuredpost ? 'is-featured' : ''
               }`}>
@@ -38,10 +47,4 @@ const ActiviteitenCardView = () => {
                   <Button to={`/activiteiten/${post.frontmatter.slug}`}>Lees meer →</Button>
                   </CardFooter>
                 </Card>
-             ))
-            }
-    </div>
-  );
-};
-
-export default ActiviteitenCardView;
+*/
