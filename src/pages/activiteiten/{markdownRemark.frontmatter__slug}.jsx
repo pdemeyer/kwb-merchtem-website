@@ -11,7 +11,9 @@ export default function BlogPostTemplate(  { data: { markdownRemark } },
 
     <Layout  showLogo="1" pageTitle="kwb Merchtem. Beleef meer.">
       <FullWidthContainer>
-        <ActiviteitDetail title={frontmatter.title} date={frontmatter.date} html={html} />
+        <div className="py-6 flex justify-center items-center">
+          <ActiviteitDetail title={frontmatter.title} date={frontmatter.date} html={html} />
+        </div>
       </FullWidthContainer>
     </Layout>
   )
