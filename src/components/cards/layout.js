@@ -24,9 +24,4 @@ const Layout = ({ pageTitle, showLogo=false, children }) => {
   )
 }
 
-/*
-
-       <TopNavbar />
-       */
-
 export default Layout
