@@ -66,6 +66,14 @@ module.exports = {
     `gatsby-plugin-sharp`,
     'gatsby-plugin-postcss',
 
+    {
+      resolve: `gatsby-plugin-build-date`,
+      options: {
+        formatting: {
+          format: `YYYY/MM/DD HH:mm:ss`,
+        },
+      },
+    },
     
     {
       resolve: `gatsby-plugin-manifest`,

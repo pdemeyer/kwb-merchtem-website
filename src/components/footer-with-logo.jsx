@@ -11,8 +11,17 @@ import {
   Typography,
   IconButton,
 } from "@material-tailwind/react";
+import { useCurrentBuildDate } from "../hooks/use-current-build-date";
 
 const FooterWithLogo = () => {
+  const  currentDate = useCurrentBuildDate();
+
+  const date = new Date(currentDate).toLocaleString("nl-BE", {
+    dateStyle: "full",
+    timeStyle: "short",
+  });
+
+
   return (
     <footer className="w-full footer py-12 pt-24  px-8 bg-gray-800 text-white">
         
@@ -73,7 +82,11 @@ const FooterWithLogo = () => {
 
       <div className="mt-10 border-t border-blue-gray-700 pt-6 text-center text-sm text-blue-gray-400">
         © 2025 KWB Merchtem. Alle rechten voorbehouden.
+        <p>
+          Laatste update: {date || 'onbekend'}
+        </p>
       </div>
+      
     </footer>
   );
 }
