@@ -2,16 +2,14 @@ import * as React from 'react'
 import FooterWithLogo from '../footer-with-logo'
 
 import hoofdLogo from "../../images/KWB_Raak_rood_geel.png";
+
 import TopNavbar from '../TopNavBar';
 import { Typography } from '@material-tailwind/react';
 
 const Layout = ({ pageTitle, showLogo=false, children }) => {
-
   return (
     <main >
-      <div>
-       <TopNavbar />
-    
+      <TopNavbar />
       <div className="w-full bg-gray-200 py-6 flex justify-center items-center">
         <figure>
       { showLogo && 
@@ -22,9 +20,13 @@ const Layout = ({ pageTitle, showLogo=false, children }) => {
       </div> 
       {children}
       <FooterWithLogo />
-      </div>
     </main>
   )
 }
+
+/*
+
+       <TopNavbar />
+       */
 
 export default Layout
