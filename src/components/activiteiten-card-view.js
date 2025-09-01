@@ -15,6 +15,7 @@ const data = useActiviteiten();
                 titel={post.frontmatter.title}
                 datum={post.frontmatter.date}
                 excerpt={post.excerpt}  
+                location={post.frontmatter.location}
                 link={post.frontmatter.slug}
                 isFeatured={post.frontmatter.featuredpost}
               />

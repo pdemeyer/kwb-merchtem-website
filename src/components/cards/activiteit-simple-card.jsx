@@ -8,7 +8,7 @@ import {
 } from "@material-tailwind/react";
 import LinkWithIcon from "../../components/link-with-icon";
  
-export function ActiviteitSimpleCard({id, titel, datum, excerpt, link, isFeatured}) {
+export function ActiviteitSimpleCard({id, titel, datum, excerpt, link, location, isFeatured}) {
   return (
     <Card key={id} className={`mt-6 w-96 rounded-lg hover:shadow-lg ${isFeatured ? 'bg-pink-200' : '' }`}>
       <CardBody key={id}>
@@ -17,6 +17,9 @@ export function ActiviteitSimpleCard({id, titel, datum, excerpt, link, isFeature
         </Typography>
         <Typography variant="h6" className="text-gray-500 mb-2 italic">
           {datum}
+        </Typography>
+        <Typography variant="h6" className="text-gray-400 mb-2">
+          {location}
         </Typography>
           <div dangerouslySetInnerHTML={{ __html: excerpt }} />
       </CardBody>

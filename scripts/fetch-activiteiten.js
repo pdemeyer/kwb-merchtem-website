@@ -16,11 +16,11 @@ function formatDate(date) {
 }
 
 function formatDateOnly(date) {
-  return format(date, "YYYY-MM-DD");
+  return format(date, "yyyy-MM-dd");
 }
 
 function formatYearOnly(date) {
-  return format(date, "YYYY");
+  return format(date, "yyyy");
 }
 
 function formatMonthOnly(date) {
@@ -39,11 +39,22 @@ async function fetchAndSaveEventsAsMarkdown() {
   console.log("Parsing calendar...");
   const events = ical.parseICS(icsText);
   
+//console.log("icsText: ", events);
+
   Object.values(events).forEach((event) => {
 
-    const year = formatYearOnly(new Date());
-    const month = formatMonthOnly(new Date());    
-    const outputDir = path.join(__dirname, "..", "src", "content", "activiteiten", year, month);
+    if (!event.start || !event.end || !event.summary) {
+        return
+
+            }
+    console.log("Event: ", event);
+
+    console.log(`Processing event: ${event.summary} starting ${formatDate(event.start)} on ${event.end}`);
+
+
+    const year = formatYearOnly(event.start);
+    const month = formatMonthOnly(event.start);    
+    const outputDir = path.join(__dirname, "..", "content", "activiteiten", year, month);
     if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
 
     if (event.type === "VEVENT") {
@@ -58,6 +69,8 @@ async function fetchAndSaveEventsAsMarkdown() {
 title: "${title}"
 date: "${dateOnly}"
 time: "${timeOnly}"
+slug: "${dateOnly}-${sanitizeFilename(title)}"
+pagetype: "activiteiten"
 location: "${event.location || ''}"
 ---
 

@@ -3,7 +3,7 @@ import React from "react";
 import { Typography, Card } from "@material-tailwind/react";
 import featuredImage from "../../images/affiche_kermis_2025.jpeg";
 
-export default function ActiviteitDetail({ title, date, html }) {
+export default function ActiviteitDetail({ title, date, html, location }) {
   return (
     <section className="w-full bg-white py-16 px-6 ">
       <div className="max-w-3xl mx-auto">
@@ -17,6 +17,11 @@ export default function ActiviteitDetail({ title, date, html }) {
         {/* Metadata */}
         <Typography className="text-sm text-gray-500 mb-8">
           Door <span className="font-medium text-gray-700">KWB Merchtem</span> · {date}
+        </Typography>
+
+
+        <Typography className="text-sm text-gray-900 mb-8">
+          {location}
         </Typography>
 
         {/*}
