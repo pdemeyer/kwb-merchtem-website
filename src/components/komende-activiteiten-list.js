@@ -2,6 +2,7 @@ import * as React from "react";
 import { graphql, StaticQuery } from "gatsby"
 import ActiviteitenLinks from "./activiteiten-links";
 
+
 const KomendeActiviteitenList = () => (
    <StaticQuery
     query={graphql`
@@ -45,16 +46,10 @@ const KomendeActiviteitenList = () => (
       .slice(0, 5) // Beperk tot de eerste 5 komende activiteiten
       //.map(({ node }) =>  { if (new Date(node.frontmatter.date) >= currentDate) { return "true" } });
       
-      return <ActiviteitenLinks activiteiten={komendeActiviteiten} showTitle={true} titel="Komende activiteiten" />
+      return <ActiviteitenLinks activiteiten={komendeActiviteiten} showTitle={true} titel="Komende activiteiten" imgUrl="/images/gezinsweekend.jpg" buttonUrl="/activiteiten"/>
     }
   }
   />
 );
 
 export default KomendeActiviteitenList;
-
-
-/*
-
-{komendeActiviteiten.length}
-*/

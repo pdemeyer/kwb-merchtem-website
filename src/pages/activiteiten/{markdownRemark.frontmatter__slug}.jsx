@@ -1,17 +1,19 @@
 import * as React from "react"
 import { graphql } from "gatsby"
-import Layout from "../../components/layout"
-import Activiteit from "../../components/actitiveit"
+import Layout from "../../components/cards/layout"
 import FullWidthContainer from "../../components/fullwidth-container"
+import ActiviteitDetail from "../../components/cards/activiteit-detail-card"
 
-export default function BlogPostTemplate(  { data: { markdownRemark } }, // this prop will be injected by the GraphQL query below.
+export default function BlogPostTemplate(  { data: { markdownRemark } }, 
 ) {
   const { frontmatter, html } = markdownRemark
   return (
 
     <Layout  showLogo="1" pageTitle="kwb Merchtem. Beleef meer.">
       <FullWidthContainer>
-        <Activiteit title={frontmatter.title} date={frontmatter.date} html={html} />
+        <div className="py-6 flex justify-center items-center">
+          <ActiviteitDetail title={frontmatter.title} date={frontmatter.date} location={frontmatter.location} html={html} />
+        </div>
       </FullWidthContainer>
     </Layout>
   )
@@ -29,6 +31,8 @@ export const query = graphql`
       frontmatter {
         title
         date(formatString: "DD/MM/YYYY")
+        slug
+        location
       }
     }
   }

@@ -1,6 +1,9 @@
 import * as React from "react";
 import { graphql, StaticQuery } from "gatsby"
+
 import ActiviteitenLinks from "./activiteiten-links";
+
+const imgUrl = "/images/petanque.jpg";
 
 const LaatsteNieuwsList = ({showTitle}) => (
    <StaticQuery
@@ -47,11 +50,7 @@ const LaatsteNieuwsList = ({showTitle}) => (
       )
       .slice(0, 5) // Beperk tot de 5 laatste nieuwtjes
 
-      if (!nieuwtjes || nieuwtjes.length === 0) {
-        return <p>Er is momenteel geen nieuws te melden.</p>;
-      }
-      
-      return <ActiviteitenLinks activiteiten={nieuwtjes} titel="Nieuwtjes" showTitle={showTitle} />
+      return <ActiviteitenLinks activiteiten={nieuwtjes} titel="Nieuwtjes" imgUrl={imgUrl} showTitle={showTitle} buttonUrl="/nieuws" />
     }
   }
   />

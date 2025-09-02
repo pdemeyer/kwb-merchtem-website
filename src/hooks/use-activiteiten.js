@@ -19,6 +19,7 @@ export const useActiviteiten = () => {
                 title
                 slug
                 date
+                location
               }
               excerpt
               html

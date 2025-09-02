@@ -17,7 +17,7 @@ const VoorbijeActiviteitenList = () => {
    })
    .slice(0, 5) // Beperk tot de laatste 5 voorbije activiteiten
    
-  return <ActiviteitenLinks activiteiten={voorbijeActiviteiten} showTitle={true} titel="Voorbije activiteiten" />
+  return <ActiviteitenLinks activiteiten={voorbijeActiviteiten} showTitle={true} titel="Voorbije activiteiten" imgUrl="/images/fietsrally.jpg" buttonUrl="/activiteiten" />
   }
 
 export default VoorbijeActiviteitenList;

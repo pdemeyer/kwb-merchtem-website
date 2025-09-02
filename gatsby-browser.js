@@ -1,6 +1,10 @@
-// custom typefaces
-import "@fontsource-variable/montserrat"
-import "@fontsource/merriweather"
+// Global styles
+import './src/styles/global.css';
 
-// Highlighting for code blocks
-import "prismjs/themes/prism.css"
+import React from "react";
+import { ThemeProvider } from "@material-tailwind/react";
+import { theme } from "./src/theme";
+
+export const wrapRootElement = ({ element }) => {
+  return <ThemeProvider value={theme}>{element}</ThemeProvider>;
+};

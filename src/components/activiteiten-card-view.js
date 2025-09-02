@@ -1,20 +1,37 @@
 import * as React from "react";
-import PageListSection from "./pagelistsection";
-import FullWidthContainer from "./fullwidth-container";
 import { useActiviteiten } from "../hooks/use-activiteiten";
-import { Link } from "gatsby";
+import { ActiviteitSimpleCard } from "./cards/activiteit-simple-card";
 
 const ActiviteitenCardView = () => {
-  const data = useActiviteiten();
+const data = useActiviteiten();
 
   return (
-    <FullWidthContainer>
-      <PageListSection>
-        <div className="columns is-multiline">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6 max-w-screen-xl mx-auto">
           { data &&
              data.map(({node : post}) => (
-              <div className="is-parent column is-4" key={post.id}>
-              <article key={post.id} className={`blog-list-item tile is-child box notification ${
+              <ActiviteitSimpleCard
+                key={post.id}
+                id={post.id}
+                titel={post.frontmatter.title}
+                datum={post.frontmatter.date}
+                excerpt={post.excerpt}  
+                location={post.frontmatter.location}
+                link={post.frontmatter.slug}
+                isFeatured={post.frontmatter.featuredpost}
+              />
+             ))
+            }
+    </div>
+  );
+};
+
+export default ActiviteitenCardView;
+
+
+
+/*
+<Card className="mt-6 w-96 rounded-lg hover:shadow-lg" key={post.id}>
+              <CardBody key={post.id} className={`blog-list-item tile is-child box notification ${
                 post.frontmatter.featuredpost ? 'is-featured' : ''
               }`}>
                 <header className="card-header">
@@ -26,17 +43,9 @@ const ActiviteitenCardView = () => {
                   <p className="subtitle is-6">{post.frontmatter.date}</p>
                   <div dangerouslySetInnerHTML={{ __html: post.excerpt }} />
                   </div>
-                <footer className="card-footer">
-                  <Link className="button" to={`/activiteiten/${post.frontmatter.slug}`}>Lees meer →</Link>
-                  </footer>
-                </article>
-                </div>
-             ))
-            }
-        </div>
-      </PageListSection>
-    </FullWidthContainer>
-  );
-};
-
-export default ActiviteitenCardView;
+                </CardBody>
+                <CardFooter className="pt-0">
+                  <Button to={`/activiteiten/${post.frontmatter.slug}`}>Lees meer →</Button>
+                  </CardFooter>
+                </Card>
+*/

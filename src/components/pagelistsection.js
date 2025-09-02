@@ -1,15 +1,12 @@
 
+import { Typography } from "@material-tailwind/react";
 import * as React from "react";
 
 const PageListSection = ( {sectionTitle, children}) => {
   return (
-    <div class="mainpage-content">
-      <div class="main-container-div">
-          <h2 class="heading-78">{sectionTitle}</h2>
-          <div class="list-container">
+    <div >
+          <Typography variant="h1">{sectionTitle}</Typography>
               {children}
-          </div>
-    </div>
     </div>
   )
 };

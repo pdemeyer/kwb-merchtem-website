@@ -1,20 +1,38 @@
 import * as React from "react";
-import ActiviteitLink from "./activiteit-link";
+import {
+  Typography,
+  List,
+  ListItem,
+} from "@material-tailwind/react";
 
-const ActiviteitenLinks = ({activiteiten, titel, showTitle}) => {
+import ActiviteitLink from "./activiteit-link";
+import VerticalCard3 from "./cards/vertical-card-3";
+
+
+const ActiviteitenLinks = ({activiteiten, titel, showTitle, imgUrl, buttonUrl}) => {
   return (
-      <div>
-        { showTitle && <h3>{titel}</h3> }
-        <ul>
+    <VerticalCard3 imgUrl={imgUrl} buttonText={`Alle ${titel}`} buttonUrl={buttonUrl}>   
+      { showTitle && <Typography variant="h3"> {titel} </Typography> }
+      {activiteiten.length === 0 ? (  
+        <Typography>
+          Er zijn momenteel geen {titel.toLowerCase()} beschikbaar.
+        </Typography>
+      ):
+      (
+        <section>
+        <List>
           {activiteiten.map(({ node }) => (
-            <li key={node.id}>
+            <ListItem key={node.id}>
               <ActiviteitLink slug={node.frontmatter.slug}
                 title={node.frontmatter.title} date={node.frontmatter.date} ></ActiviteitLink>
-            </li>
+            </ListItem>
           ))}
-        </ul>
-      </div>
+        </List>
+        </section>
+      ) }
+      </VerticalCard3>
       );
     }
 
 export default ActiviteitenLinks;
+

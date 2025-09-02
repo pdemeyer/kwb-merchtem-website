@@ -1,7 +1,7 @@
 import * as React from 'react'
 import Seo from '../components/seo'
 import ContactPaginaComponent from '../components/page-components/contact-pagina-component'
-import Layout from '../components/layout'
+import Layout from '../components/cards/layout'
 
 const ContactPage = () => {
   return (
