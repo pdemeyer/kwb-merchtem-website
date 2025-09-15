@@ -289,19 +289,24 @@ export default function TopNavbar() {
 
   const navItems = [
     { label: "Activiteiten", path: "/activiteiten" },
+    { label: "Mysterie van de Nacht", path: "/mysterie" },
     { label: "Kleine Raak", path: "/kleine-raken" },
     { label: "Bestuur", path: "/bestuur" },
-    { label: "Kermis", path: "/kermis" },
-    { label: "Corrida", path: "/corrida" },
     { label: "Nieuws", path: "/nieuws" },
     { label: "Over kwb Merchtem", path: "/over" },
     { label: "Contact", path: "/contact" },
   ];
 
+  /*
+
+    { label: "Kermis", path: "/kermis" },
+    { label: "Corrida", path: "/corrida" },
+  */
+
   return (
-    <Navbar className="border-none shadow-none rounded-none mx-auto max-w-screen-xl px-4 py-2 ">
+    <Navbar className="border-none bg-transparent shadow-none rounded-none mx-auto max-w-screen-xl px-4 py-2 ">
       <div className="flex items-center justify-between">
-        <Link to="/" title="Logo" className="text-xl font-bold text-red-600">
+        <Link to="/" title="Logo" className="text-xl font-bold text-theme-navigation-link hover:text-theme-navigation-link-hover">
           <img src={logo} alt="kwb Merchtem" style={{ width: "88px" }} />
         </Link>
         <div className="hidden lg:flex gap-6">
@@ -310,7 +315,7 @@ export default function TopNavbar() {
               key={label}
               as={Link}
               to={path}
-              className="text-gray-700 hover:text-red-600 transition-colors font-medium"
+              className="text-theme-link hover:text-theme-link-hover transition-colors font-medium"
             >
               {label}
             </Typography>
@@ -361,7 +366,7 @@ export default function TopNavbar() {
               key={label}
               as={Link}
               to={path}
-              className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+              className="text-theme-link hover:text-theme-link-hover transition-colors font-medium"
             >
               {label}
             </Typography>

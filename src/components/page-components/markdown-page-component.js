@@ -15,24 +15,22 @@ const renderPage = (data) => {
 const renderNode = (data) => {
   const { frontmatter, html } = data
 
-  const imgUrls = [ "/images/kookavond.jpg" ]
+  const imgUrls = []; 
+
+  if(frontmatter.image && frontmatter.image.publicURL ) {
+    imgUrls.push( frontmatter.image.publicURL )
+  }
+  else {
+    imgUrls.push( "/images/kookavond.jpg" )
+  }
+
+  console.log("image:", frontmatter.image)
 
   return (
     <ContentSection title={frontmatter.title} date={frontmatter.date} imgUrls={imgUrls}>  
       <Typography className="mb-4" dangerouslySetInnerHTML={{ __html: html }} >
       </Typography>
     </ContentSection>
-    /*
-  <div class="mainpage-content">
-      <div class="main-container-div">
-    <h1>{frontmatter.title}</h1>
-    <p>{frontmatter.date}</p>
-    <Typography variant="h3" color="blue-gray" className="mb-4">
-          <div className="post-content" dangerouslySetInnerHTML={{ __html: html }} />
-    </Typography>
-  </div>
-  </div>
-  */
   )
 }
 

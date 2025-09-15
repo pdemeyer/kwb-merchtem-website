@@ -15,7 +15,7 @@ const ActiviteitLink = ({key, slug, title, date }) => {
                   key={title}
                   as={Link}
                   to={`/activiteiten/${slug}`}
-                  className="text-gray-500 hover:text-red-400 transition-colors font-medium"
+                  className="text-theme-link hover:text-theme-link-hover transition-colors font-medium"
                 >
                   {activiteitDate}  ||  {title} 
                 </Typography>

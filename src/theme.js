@@ -28,7 +28,7 @@ export const theme = {
     styles: {
       base: {
         paragraph: {
-          initial: 'text-base text-gray-800 dark:text-gray-200',
+          initial: 'text-base text-pink-800 dark:text-gray-200',
         },
         a: {
           initial: "text-red-500 underline",

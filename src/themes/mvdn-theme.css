@@ -1,0 +1,20 @@
+.mvdn-theme {
+  --font-sans: 'Radio Canada Big', ui-sans-serif, system-ui;
+  --theme-bg: #0d0d0d;
+  --theme-text: #e46009;
+  --theme-accent: #1f1b2e;
+  --theme-footer: #141d3adc;
+  --theme-link: #ff7518;
+  --theme-link-hover: #cce460;
+  --theme-heading: #ff7518;
+  --theme-gradient-start: #540091;
+  --theme-gradient-end: #000000;
+  --theme-contrast-bg: #1f2937;
+  --theme-contrast-text: #f3f4f6;
+  --theme-contrast-link: #ece9e9;
+  --theme-contrast-link-hover: #a71212;
+  --theme-header-bg: #3e006b;
+  --theme-header-text: #ffffff;
+  --theme-header-accent: #2563eb;
+  --theme-header-accent-hover: #1d4ed8;
+}

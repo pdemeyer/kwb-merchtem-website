@@ -5,7 +5,7 @@ import BestuurPaginaComponent from '../components/page-components/bestuur-pagina
 
 const BestuurPage = () => {
   return (
-    <Layout pageTitle="Bestuur KWB Merchtem.">
+    <Layout pageTitle="Bestuur KWB Merchtem." themeName="default">
         <BestuurPaginaComponent />
     </Layout>
   )
