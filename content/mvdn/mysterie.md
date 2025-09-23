@@ -9,7 +9,7 @@ image: "mysterie-1.jpg"
 Mysterie van de Nacht: wandeltocht met griezelen en schrikken!
 
 <div style="font-size: 24px; text-align: center;">
-[Inschrijven](#inschrijven)  -|- [Betalen](#betaling)
+    <a class="text-theme-link hover:text-theme-link-hover" href="#inschrijven">Inschrijven</a>  -|- <a class="text-theme-link hover:text-theme-link-hover" href="#betaling">Betalen</a> 
 </div>
 
 ## Waar en wanneer?
@@ -26,12 +26,10 @@ Vooraf online inschrijven kan tot 22 oktober, je inschrijving is pas bevestigd a
 Schrijf je hieronder in via het formulier. Ben je met een grote groep? Contacteer ons direct via [link](mailto:mysterie@kwbmerchtem.be).
 
 
-<!--
-<iframe width="640px" height="600px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__pyqwcdUREM2T044SlFVSFlNQktBWUJaMk85VzFVNi4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+<iframe width="800px" height="640px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=euFm6DXegUiijUPMx4gd4e_xk1wYgulBvw6mReSggbRUMDJTRzdYNzc5RE9CWkdSVDdMOFk0VlVSVS4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
 
-Geen invulformulier te zien? Klik [hier](https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__pyqwcdUREM2T044SlFVSFlNQktBWUJaMk85VzFVNi4u&embed=true).
+Geen invulformulier te zien? Klik [hier](https://forms.office.com/e/GJwDCg3kB4).
 
--->
 
 <p id="betaling" />
 

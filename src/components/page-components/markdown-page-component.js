@@ -28,7 +28,7 @@ const renderNode = (data) => {
 
   return (
     <ContentSection title={frontmatter.title} date={frontmatter.date} imgUrls={imgUrls}>  
-      <Typography className="mb-4" dangerouslySetInnerHTML={{ __html: html }} >
+      <Typography className="mb-6" dangerouslySetInnerHTML={{ __html: html }} >
       </Typography>
     </ContentSection>
   )

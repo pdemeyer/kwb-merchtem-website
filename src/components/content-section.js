@@ -8,7 +8,7 @@ export default function ContentSection({title, imgUrls, children}) {
       <div className="max-w-screen-xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
         {/* Left: Text Content */}
         <div>
-          <Typography variant="h4" color="blue-gray" className="mb-2">
+          <Typography variant="h2" color="blue-gray" className="mb-7">
             {title}
           </Typography>
           {children}
