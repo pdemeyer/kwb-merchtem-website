@@ -1,24 +1,66 @@
 @import "tailwindcss";
 
-@import url('https://fonts.googleapis.com/css2?family=Radio+Canada+Big:wght@400;700&display=swap');
-
-html {
-  font-family: 'Radio Canada Big', ui-sans-serif, system-ui;
-}
-
-/* do not put global styles here, use Tailwind's @apply instead */
 /*
-a {
-  @apply text-gray-500 hover:underline;
-  transition: color 0.2s;
+@layer base {
+  h2 {
+    @apply text-2xl font-bold text-theme-text; 
+  }
 }
 */
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-a {
-  @apply text-gray-700 hover:text-red-600 transition-colors;
-  transition: color 0.2s;
+@layer utilities {
+  .bg-theme-bg {
+    background-color: var(--theme-bg);
+  }
+  .bg-theme-accent {
+    background-color: var(--theme-accent);
+  }
+  .bg-theme-contrast-bg {
+    background-color: var(--theme-contrast-bg);
+  }
+  .text-theme-link {
+    color: var(--theme-link);
+  }
+  .text-theme-navigation-link {
+    color: var(--theme-link);
+    font-weight: bold;
+  }
+  .hover\:text-theme-link-hover:hover {
+    color: var(--theme-link-hover);
+  }
+  .hover\:text-theme-link-navigation-hover:hover {
+    color: var(--theme-link-hover);
+  }
+  .bg-theme-header-bg {
+    background-color: var(--theme-header-bg);
+  }
+  .text-theme-text {
+    color: var(--theme-text);
+  }
+  .text-theme-contrast-text {
+    color: var(--theme-contrast-text);
+  }
+  .text-theme-header-text {
+    color: var(--theme-header-text);
+  }
+  .text-theme-contrast-link {
+    color: var(--theme-contrast-link);
+  }
+  .text-theme-contrast-link-hover:hover {
+    color: var(--theme-contrast-link-hover);
+  }
+  .text-theme-heading {
+    color: var(--theme-heading);
+  } 
+  .bg-theme-gradient {
+    background: linear-gradient(to bottom, var(--theme-gradient-start), var(--theme-gradient-end));
+  }
+  
+  /* Optional: border and ring colors */
+  .border-theme-link {
+    border-color: var(--theme-link);
+  }
+  .ring-theme-accent {
+    --tw-ring-color: var(--theme-accent);
+  }
 }

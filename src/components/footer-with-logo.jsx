@@ -23,28 +23,28 @@ const FooterWithLogo = () => {
 
 
   return (
-    <footer className="w-full footer py-12 pt-24  px-8 bg-gray-800 text-white">
+    <footer className="w-full footer py-12 pt-24  px-8 bg-theme-contrast-bg text-theme-contrast-text">
         
       <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
         <div>
-          <Typography variant="h5" className="mb-2 text-white">
+          <Typography variant="h5" className="mb-2">
             KWB Merchtem
           </Typography>
-          <Typography className="text-blue-gray-200 text-sm">
+          <Typography className="text-sm">
             Samen beleven, verbinden en groeien. Ontdek onze activiteiten en nieuws.
           </Typography>
         </div>
 
         <div>
-          <Typography variant="h6" className="mb-4 text-white">
+          <Typography variant="h6" className="mb-4">
             Navigatie
           </Typography>
-          <ul className="space-y-2 text-blue-gray-200 text-sm">
-            <li><a href="https://www.kwbmerchtem.be/#activiteiten" className="text-white hover:text-white">Activiteiten</a></li>
-            <li><a href="https://www.kwbmerchtem.be/#corrida" className="hover:text-white">Corrida</a></li>
-            <li><a href="https://www.kwbmerchtem.be/#nieuws" className="hover:text-white">Nieuws</a></li>
-            <li><a href="https://www.kwbmerchtem.be/#kleine-raak" className="hover:text-white">Kleine Raak</a></li>
-            <li><a href="https://www.kwbmerchtem.be/#contact" className="hover:text-white">Contact</a></li>
+          <ul className="space-y-2 text-sm text-theme-contrast-link hover:text-theme-contrast-link-hover">
+            <li><a href="activiteiten" className="hover:text-theme-contrast-link-hover" >Activiteiten</a></li>
+            <li><a href="/corrida" className="hover:text-white">Corrida</a></li>
+            <li><a href="/nieuws" className="hover:text-white">Nieuws</a></li>
+            <li><a href="/kleine-raak" className="hover:text-white">Kleine Raak</a></li>
+            <li><a href="/contact" className="hover:text-white">Contact</a></li>
           </ul>
         </div>
 

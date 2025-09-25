@@ -4,11 +4,11 @@ import { Typography, Card } from "@material-tailwind/react";
 
 export default function ContentSection({title, imgUrls, children}) {
   return (
-    <section className="w-full bg-gray-50 py-16 px-6">
+    <section className="w-full bg-transparent py-16 px-6">
       <div className="max-w-screen-xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
         {/* Left: Text Content */}
         <div>
-          <Typography variant="h4" color="blue-gray" className="mb-2">
+          <Typography variant="h2" color="blue-gray" className="mb-7">
             {title}
           </Typography>
           {children}

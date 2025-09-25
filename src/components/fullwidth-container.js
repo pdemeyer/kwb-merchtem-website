@@ -25,7 +25,7 @@ function wrapWithFilledBackground(content) {
 
 function wrapWithEmptyBackground(content) {
   return (
-    <div className="w-full py-6 px-6">
+    <div className="w-full bg-transparent py-6 px-6">
       {content}
     </div>
   )
