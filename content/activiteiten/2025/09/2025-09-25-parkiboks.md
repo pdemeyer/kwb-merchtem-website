@@ -7,5 +7,5 @@ pagetype: "activiteiten"
 location: "Sporthal (Heiveld 65, 1745 Opwijk Flemish Region, Belgium)"
 ---
 
-
+[cid:image001.png@01DC2872.1385F080]
 

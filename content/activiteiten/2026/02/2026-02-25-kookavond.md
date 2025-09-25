@@ -1,0 +1,11 @@
+---
+title: "Kookavond"
+date: "2026-02-25"
+time: "19:02"
+slug: "2026-02-25-kookavond"
+pagetype: "activiteiten"
+location: "KWB lokaal-De Werkman (Kerkstraat, Merchtem Flemish Region, Belgium)"
+---
+
+
+
