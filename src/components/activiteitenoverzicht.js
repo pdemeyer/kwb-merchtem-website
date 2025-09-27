@@ -4,7 +4,7 @@ import React from "react";
 
 const ActiviteitenOverzicht = () => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 p-6 max-w-screen-xl mx-auto">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 pb-6 pt-6 max-w-screen-xl mx-auto">
          <KomendeActiviteitenList />
           <VoorbijeActiviteitenList />
     </div>
