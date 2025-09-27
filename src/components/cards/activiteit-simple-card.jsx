@@ -10,7 +10,7 @@ import LinkWithIcon from "../../components/link-with-icon";
  
 export function ActiviteitSimpleCard({id, titel, datum, excerpt, link, location, isFeatured}) {
   return (
-    <Card key={id} className={`mt-6 w-96 rounded-lg hover:shadow-lg ${isFeatured ? 'bg-pink-200' : '' }`}>
+    <Card key={id} className={`rounded-lg hover:shadow-lg ${isFeatured ? 'bg-pink-200' : '' }`}>
       <CardBody key={id}>
         <Typography variant="h5" color="blue-gray" className="mb-2">
           {titel}
