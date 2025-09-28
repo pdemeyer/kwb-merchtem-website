@@ -11,7 +11,7 @@ const MvdnPage = () => {
   )
 }
 
-export const Head = () => <Seo title="kwb Bestuur" />
+export const Head = () => <Seo title="Mysterie van de Nacht" />
 
 export default MvdnPage
 

@@ -4,7 +4,7 @@ slug: "mysterie-van-de-nacht"
 pagetype: "mysterie"
 date: "2025-09-15"
 itemtype: "voorpagina"
-image: "mysterie-1.jpg"
+image: "mysterie-2.jpg"
 ---
 Mysterie van de Nacht: wandeltocht met griezelen en schrikken!
 
@@ -15,7 +15,7 @@ Mysterie van de Nacht: wandeltocht met griezelen en schrikken!
 ## Waar en wanneer?
 Zaterdag 25 oktober. Vertrekken tussen 18u en 20u.
 
-Parochiezaal Droeshout (Steenweg op Vilvoorde).
+Parochiezaal Droeshout (Steenweg op Vilvoorde 231/229).
 
 <p id="inschrijven"/>
 
