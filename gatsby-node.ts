@@ -7,3 +7,10 @@
 /**
  * @type {import('gatsby').GatsbyNode['createPages']}
  */
+
+/*
+import express, { Express } from "express";
+exports.onCreateDevServer = ({ app }: { app: Express }) => {
+  app.use("/admin", express.static("public/admin"));
+};
+*/

@@ -2,3 +2,6 @@ node_modules/
 .cache/
 public
 scripts/.env
+
+node_modules
+.env
