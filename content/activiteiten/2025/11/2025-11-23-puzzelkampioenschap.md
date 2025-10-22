@@ -22,12 +22,11 @@ Een team bestaat uit maximaal vier personen.
 2.	het bedrag van €20 per team storten op BE70 7995 5005 0525
 🎁 Wat krijg je?
 Elke ploeg ontvangt:
-<ul>
-<li>4 drankbonnetjes</li>
-<li>een bordje lekkers</li>
-<li>een puzzeldiploma met vermelding van plaats en tijd</li>
-<li>en… jullie mogen de puzzel mee naar huis nemen!</li>
-</ul>
+- 4 drankbonnetjes</li>
+- een bordje lekkers</li>
+- een puzzeldiploma met vermelding van plaats en tijd</li>
+- en… jullie mogen de puzzel mee naar huis nemen!</li>
+
 Er kunnen maximaal 25 teams deelnemen, dus wees er snel bij!
 
 👀 Bezoekers en supporters zijn meer dan welkom, maar mogen de teams uiteraard niet helpen of hinderen.
