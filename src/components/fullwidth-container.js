@@ -2,15 +2,19 @@ import { Typography } from '@material-tailwind/react';
 import * as React from 'react'
 
 
-function renderFullWidthContainer({title, children}) {
+function renderFullWidthContainer({title, maxNumCols, children}) {
+
+   const classes = "grid grid-cols-1 gap-6 pb-6 pt-6 max-w-screen-xl mx-auto"
+   if (maxNumCols ==2) {
+    classes = "grid grid-cols-1 lg:grid-cols-2 gap-6 pb-6 pt-6 max-w-screen-xl mx-auto"
+   }
+
   return (
     <div>
       {title && <div className="max-w-screen-xl mx-auto flex justify-center items-center">
                   <Typography variant="h6" className="mb-4 uppercase">{title}</Typography>
                 </div> }
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 pb-6 pt-6 max-w-screen-xl mx-auto">
-            {children}
-    </div>
+    <div className={classes}> {children} </div>
     </div>
   )
 }
@@ -31,8 +35,8 @@ function wrapWithEmptyBackground(content) {
   )
 }
 
-const FullWidthContainer = ( {title, date, html, isBgFilled, children }) => {
-  const content = renderFullWidthContainer({title, children});
+const FullWidthContainer = ( {title, date, html, isBgFilled, maxNumCols, children }) => {
+  const content = renderFullWidthContainer({title, maxNumCols, children});
   if (isBgFilled) {
     return wrapWithFilledBackground(content);
   } else
