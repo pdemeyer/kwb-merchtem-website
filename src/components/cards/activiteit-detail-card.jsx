@@ -1,11 +1,12 @@
 import React from "react";
 
-import { Typography, Card } from "@material-tailwind/react";
+import { Typography, Card, CardBody } from "@material-tailwind/react";
 import featuredImage from "../../images/affiche_kermis_2025.jpeg";
 
 export default function ActiviteitDetail({ title, date, html, location }) {
   return (
-    <section className="w-full bg-white py-16 px-6 ">
+      <Card className="w-full flex-row"> 
+        <CardBody className="m-0 " >
       <div className="max-w-3xl mx-auto">
         {/* Featured Image */}
 
@@ -34,6 +35,14 @@ export default function ActiviteitDetail({ title, date, html, location }) {
         <div className="space-y-6 text-gray-800 leading-relaxed" dangerouslySetInnerHTML={{ __html: html }}>
         </div>
       </div>
-    </section>
+      </CardBody>
+    </Card>
   );
+}
+
+{
+  /*
+  
+    <section className="w-full bg-white py-16 px-6 ">
+    */
 }

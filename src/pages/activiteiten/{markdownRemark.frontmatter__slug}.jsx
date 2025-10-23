@@ -11,12 +11,16 @@ export default function BlogPostTemplate(  { data: { markdownRemark } },
 
     <Layout  showLogo="1" pageTitle="kwb Merchtem. Beleef meer.">
       <FullWidthContainer>
-        <div className="py-6 flex justify-center items-center">
           <ActiviteitDetail title={frontmatter.title} date={frontmatter.date} location={frontmatter.location} html={html} />
-        </div>
       </FullWidthContainer>
     </Layout>
   )
+}
+
+{
+  /*
+        <div className="py-6 flex justify-center items-center">
+  */
 }
 
 export const query = graphql`

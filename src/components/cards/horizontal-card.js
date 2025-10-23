@@ -15,8 +15,7 @@ import DebugLogger from "../debug-logger";
 export function HorizontalCard({imgUrl, cardHeaderTitle, contentTitle, content, linkText, linkUrl, children }) {
   return (
     <Card className="w-full max-w-[96rem] flex-row">
-      <DebugLogger text="HorizontalCard: " logObject={{imgUrl, cardHeaderTitle, contentTitle, content, linkText, linkUrl, children}} />
-      <CardHeader shadow={false} floated={false} className="m-0 w-2/5 max-h-100 shrink-0 rounded-r-none">
+     <CardHeader shadow={false} floated={false} className="m-0 w-2/5 max-h-100 shrink-0 rounded-r-none">
         <img src={imgUrl} alt="card-image" className="h-full w-full object-cover" />
       </CardHeader>
       <CardBody className="m-0 w-3/5" >
