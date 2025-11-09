@@ -2,7 +2,7 @@
 title: "Gezinsactiviteit: Beleef de 19de eeuw"
 date: "2025-11-15"
 time: "20:11"
-slug: "2025-11-15-gezinsactiviteit--beleef-de-19de-eeuw"
+slug: "2025-11-15-gezinsactiviteit-beleef-de-19de-eeuw"
 pagetype: "activiteiten"
 location: "zaal Harmonie, Stoofstraat  Merchtem"
 ---

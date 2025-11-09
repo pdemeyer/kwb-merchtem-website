@@ -5,11 +5,17 @@ import ActiviteitenOverzicht from '../../components/activiteitenoverzicht'
 import ActiviteitenCardView from '../../components/activiteiten-card-view'
 import { HorizontalCard } from '../../components/cards/horizontal-card'
 import FullWidthContainer from '../../components/fullwidth-container'
+import ActiviteitenMaandCardView from '../../components/activiteiten-maand-card-view'
 
 const IndexPage = () => {
   return (
     <Layout showLogo="1" pageTitle="Activiteiten.">
       <ActiviteitenOverzicht />
+      
+      <FullWidthContainer>
+        <ActiviteitenMaandCardView toonEnkelDezeMaand={true} />
+      </FullWidthContainer>
+
       <FullWidthContainer>
       <HorizontalCard 
                 cardHeaderTitle="Kalender 2025-2026"
