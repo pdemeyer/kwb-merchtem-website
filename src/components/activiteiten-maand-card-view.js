@@ -4,6 +4,7 @@ import { useActiviteiten } from "../hooks/use-activiteiten";
 import { parseISO, format } from 'date-fns';
 import { isAfter, isBefore, startOfMonth, addMonths } from 'date-fns';
 import { MonthView } from "./maand-view";
+import LinkWithIcon from "./link-with-icon";
 
 function groupByMonth(posts) {
   const map = new Map();
@@ -35,6 +36,7 @@ function renderEnkelDezeMaand(groupedData) {
     return (
       <div className="pb-6 pt-6 max-w-screen-xl mx-auto">
         <MonthView events={currentMonthData.items} currentDate={currentDate} />
+        <LinkWithIcon text={`Toon heel werkjaar`} href={`/activiteiten/werkjaar#${monthNum}`} />
       </div>
     );
   }
@@ -114,7 +116,7 @@ function renderHeelWerkjaar(groupedData) {
           const currentDate = new Date(Number(year), Number(monthNum) - 1, 1);
 
           return (
-            <div key={month}>
+            <div key={month} id={monthNum}>
               <MonthView events={items} currentDate={currentDate} />
             </div>
           );
@@ -128,8 +130,6 @@ const ActiviteitenMaandCardView = ({toonEnkelDezeMaand = false, toonHeelDitWerkj
   const data = useActiviteiten();
 
   const groupedData = groupByMonth(data);
-
-  console.log("toonEnkelDezeMaand: ", toonEnkelDezeMaand)
 
   if(toonEnkelDezeMaand) {
     return renderEnkelDezeMaand(groupedData);

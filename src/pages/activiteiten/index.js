@@ -37,10 +37,15 @@ const IndexPage = () => {
                 <p>Zo ben je steeds op de hoogte van onze activiteiten.</p>
                 </HorizontalCard>
               </FullWidthContainer>
-      <ActiviteitenCardView />
     </Layout>
   )
 }
+
+{/*
+  
+      <ActiviteitenCardView />
+      
+*/}
 
 export const Head = () => <Seo title="Activiteiten" />
 
