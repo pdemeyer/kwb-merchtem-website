@@ -1,6 +1,7 @@
 "use strict";
 
 const date = require('date-and-time');
+const { format } = require('path');
 
 exports.sourceNodes = ({
   actions,
@@ -23,7 +24,8 @@ exports.sourceNodes = ({
   }
 
   const buildDateData = {
-    currentDate: formatAsDateString ? date.format(new Date(), formatting.format, formatting.utc) : new Date()
+    //currentDate: formatAsDateString ? date.format(new Date(), formatting.format, formatting.utc) : new Date()
+    currentDate: formatAsDateString ? new Date().toISOString() : new Date()
   };
   const buildDateNodeContent = JSON.stringify(buildDateData);
   const buildDateNodeMeta = {
