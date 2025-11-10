@@ -17,7 +17,7 @@ exports.sourceNodes = ({
   const createNode = actions.createNode;
 
   if (locale) {
-    require(`date-and-time/locale/${locale}`);
+    //require(`date-and-time/locale/${locale}`);
 
     date.locale(locale);
   }
