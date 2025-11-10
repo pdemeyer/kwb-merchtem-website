@@ -19,6 +19,7 @@ const FooterWithLogo = () => {
   const date = new Date(currentDate).toLocaleString("nl-BE", {
     dateStyle: "full",
     timeStyle: "short",
+    timeZone: "Europe/Brussels",
   });
 
 
@@ -43,7 +44,7 @@ const FooterWithLogo = () => {
             <li><a href="activiteiten" className="hover:text-theme-contrast-link-hover" >Activiteiten</a></li>
             <li><a href="/corrida" className="hover:text-white">Corrida</a></li>
             <li><a href="/nieuws" className="hover:text-white">Nieuws</a></li>
-            <li><a href="/kleine-raak" className="hover:text-white">Kleine Raak</a></li>
+            <li><a href="/kleine-raken" className="hover:text-white">Kleine Raak</a></li>
             <li><a href="/contact" className="hover:text-white">Contact</a></li>
           </ul>
         </div>
