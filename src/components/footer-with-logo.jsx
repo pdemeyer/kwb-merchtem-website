@@ -19,6 +19,7 @@ const FooterWithLogo = () => {
   const date = new Date(currentDate).toLocaleString("nl-BE", {
     dateStyle: "full",
     timeStyle: "short",
+    timeZone: "Europe/Brussels",
   });
 
 
