@@ -12,7 +12,7 @@ exports.sourceNodes = ({
     format: 'MM/DD/YYYY',
     utc: false
   },
-  locale = null
+  locale = 'nl-BE'
 }) => {
   const createNode = actions.createNode;
 
