@@ -289,7 +289,7 @@ export default function TopNavbar() {
 
   const navItems = [
     { label: "Activiteiten", path: "/activiteiten" },
-    { label: "Mysterie van de Nacht", path: "/mysterie" },
+    { label: "Kookboek", path: "/kookboek" },
     { label: "Kleine Raak", path: "/kleine-raken" },
     { label: "Bestuur", path: "/bestuur" },
     { label: "Nieuws", path: "/nieuws" },
@@ -298,7 +298,7 @@ export default function TopNavbar() {
   ];
 
   /*
-
+    { label: "Mysterie van de Nacht", path: "/mysterie" },
     { label: "Kermis", path: "/kermis" },
     { label: "Corrida", path: "/corrida" },
   */
