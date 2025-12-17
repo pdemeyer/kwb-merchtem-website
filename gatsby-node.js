@@ -12,7 +12,10 @@ const path = require("path");
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
-  const result = await graphql(`
+
+
+/** Kookboek : tag pagina's */
+ const kookboekTagsResult = await graphql(`
     {
       allMarkdownRemark(
                     filter: { 
@@ -30,18 +33,73 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `);
 
-  const recipes = result.data.allMarkdownRemark.nodes;
 
-  // Alle unieke tags verzamelen
-  const tags = [...new Set(recipes.flatMap(r => r.frontmatter.tags))];
+/** Kookboek : recepten pagina's */
+  const kookboekReceptenResult = await graphql(`
+    {
+      allMarkdownRemark(
+                    filter: { 
+                       frontmatter: { 
+                          pagetype: { eq: "kookboek" } }
+                       }
+              ) {
+        nodes {
+            frontmatter {
+                title
+                kok
+                date(formatString: "DD/MM/YYYY")
+                slug
+                tags
+                foto {
+                   childImageSharp {
+                    gatsbyImageData
+                    }
+                }
+            }
+            excerpt(pruneLength: 150)
+            html
+        }
+      }
+    }
+  `);
 
-  // Voor elke tag een pagina maken
-  tags.forEach(tag => {
-    createPage({
-      path: `/kookboek/tags/${tag}`,
-      component: path.resolve("./src/templates/tag-template.js"),
-      context: { tag },
-    });
-  });
+
+/** Pagina's maken voor de tags */
+  renderKookboekTagPages(kookboekTagsResult, createPage);
+
+/** Pagina's maken voor de recepten */
+  renderKookboekRecepten(kookboekReceptenResult, createPage);
+
 };
 
+
+
+function renderKookboekRecepten(kookboekReceptenResult, createPage) {
+    const recepten = kookboekReceptenResult.data.allMarkdownRemark.nodes;
+
+    // Voor elk recept een pagina maken
+    recepten.forEach(recept => {
+        createPage({
+            path: `/kookboek/${recept.frontmatter.slug}`,
+            component: path.resolve("./src/templates/recept-detail-template.js"),
+            context: { recept },
+        });
+    });
+}
+
+function renderKookboekTagPages(kookboekTagsResult, createPage) {
+    
+    const tagrecepten = kookboekTagsResult.data.allMarkdownRemark.nodes;
+
+    // Alle unieke tags verzamelen
+    const tags = [...new Set(tagrecepten.flatMap(r => r.frontmatter.tags))];
+
+    // Voor elke tag een pagina maken
+    tags.forEach(tag => {
+        createPage({
+            path: `/kookboek/tags/${tag}`,
+            component: path.resolve("./src/templates/tag-template.js"),
+            context: { tag },
+        });
+    });
+}

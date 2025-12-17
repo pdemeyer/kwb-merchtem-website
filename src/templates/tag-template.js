@@ -9,9 +9,9 @@ export default function TagTemplate({ data, pageContext }) {
     
     <Layout showLogo={true} pageTitle="Kookboek. De bijbel voor de kwb-man.">
     <div>
-        <div className="flex flex-wrap justify-center my-6 text-xl font-bold">
+        <div className="flex flex-wrap justify-center my-6">
             <h1>Recepten met tag: {pageContext.tag}</h1>
-        </div>
+      </div>
 
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6 max-w-screen-xl mx-auto">
                {recipes.map(
