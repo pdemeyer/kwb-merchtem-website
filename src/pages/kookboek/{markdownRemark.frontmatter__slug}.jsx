@@ -11,7 +11,9 @@ export default function BlogPostTemplate(  { data: { markdownRemark } },
 
     <Layout showLogo="1" pageTitle="Kookboek. De bijbel voor de kwb-man.">
       <FullWidthContainer>
-          <KookBoekReceptDetail title={frontmatter.title} date={frontmatter.date} kok={frontmatter.kok} foto={frontmatter.foto} html={html} />
+          <KookBoekReceptDetail title={frontmatter.title} date={frontmatter.date} 
+          kok={frontmatter.kok} foto={frontmatter.foto} html={html}
+          tags={frontmatter.tags} />
       </FullWidthContainer>
     </Layout>
   )
@@ -41,6 +43,7 @@ export const query = graphql`
             gatsbyImageData
           }
         }
+        tags
       }
       excerpt(pruneLength: 150)
       html

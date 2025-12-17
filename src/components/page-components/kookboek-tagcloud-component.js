@@ -1,42 +1,52 @@
 import * as React from 'react'
-import { graphql, StaticQuery } from "gatsby"
+import { graphql, Link, StaticQuery, useStaticQuery } from "gatsby"
 import KookBoekRecept from '../kookboek-recept';
 
-const KookboekQuery = graphql`
-        query {
+const KookboekTagsQuery = graphql`
+query {
           allMarkdownRemark(
                     filter: { 
                        frontmatter: { 
                           pagetype: { eq: "kookboek" } }
-                       },
-                    sort:  [ { frontmatter: {date: DESC} }]
+                       }
               ) {
             edges {
               node {
                 id
                 frontmatter {
-                  title
-                  kok
-                  date(formatString: "DD/MM/YYYY")
-                  slug
-                  foto {
-                    childImageSharp {
-                      gatsbyImageData(width: 800)
-                    }
-                  }
                   tags
                 }
-                excerpt(pruneLength: 150)
-                html
               }
             }
           }
         }
-      `;
+`;
+
+const KookBoekTagCloudComponent = () => {
+  const data = useStaticQuery(KookboekTagsQuery);
+  const recipes = data.allMarkdownRemark.edges.map(edge => edge.node);
+  const tags = [...new Set(recipes.flatMap(r => r.frontmatter.tags))];
+
+  return(
+     <div className="flex flex-wrap justify-center my-6">
+            {tags.map(tag => (
+              
+            <div className="m-2 border border-gray-300 rounded-full px-4 py-1" key={tag}>
+              <Link key={tag} to={`/kookboek/tags/${tag}`} style={{ margin: "0 10px" }}>
+                {tag}
+              </Link>
+              </div>
+            ))}
+          </div>
+  );
+
+};
+
+export default KookBoekTagCloudComponent;
 
 
-const KookBoekPaginaComponent = () => (
-  <StaticQuery query={KookboekQuery} render={data => (
+/*
+
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6 max-w-screen-xl mx-auto">
                {data.allMarkdownRemark.edges.map(({ node }) => (
 
@@ -51,9 +61,4 @@ const KookBoekPaginaComponent = () => (
                 </KookBoekRecept>
             ))}
     </div>
-)}
- />);
-
- useStaticQuery 
-
-export default KookBoekPaginaComponent;
+*/

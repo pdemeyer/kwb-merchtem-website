@@ -5,6 +5,7 @@ kok: "Wouter Kemels"
 slug: "2025-12-16-hummus-naanbrood"
 pagetype: "kookboek"
 foto: "IMG_3660.JPG"
+tags: ["vegetarisch", "snel", "aperitief"]
 ---
 # Hummus & Naanbrood
 
