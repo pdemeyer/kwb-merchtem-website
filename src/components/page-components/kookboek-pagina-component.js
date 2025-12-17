@@ -54,6 +54,4 @@ const KookBoekPaginaComponent = () => (
 )}
  />);
 
- useStaticQuery 
-
 export default KookBoekPaginaComponent;
