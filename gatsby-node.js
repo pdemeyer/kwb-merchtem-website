@@ -34,6 +34,25 @@ exports.createPages = async ({ graphql, actions }) => {
   `);
 
 
+/** Kookboek : kok pagina's */
+ const kookboekKoksResult = await graphql(`
+    {
+      allMarkdownRemark(
+                    filter: { 
+                       frontmatter: { 
+                          pagetype: { eq: "kookboek" } }
+                       }
+              ) {
+        nodes {
+          frontmatter {
+            kok
+            slug
+          }
+        }
+      }
+    }
+  `);
+
 /** Kookboek : recepten pagina's */
   const kookboekReceptenResult = await graphql(`
     {
@@ -70,6 +89,9 @@ exports.createPages = async ({ graphql, actions }) => {
 /** Pagina's maken voor de recepten */
   renderKookboekRecepten(kookboekReceptenResult, createPage);
 
+/** Pagina's maken voor de koks */
+  renderKookboekKokPages(kookboekKoksResult, createPage);
+
 };
 
 
@@ -100,6 +122,23 @@ function renderKookboekTagPages(kookboekTagsResult, createPage) {
             path: `/kookboek/tags/${tag}`,
             component: path.resolve("./src/templates/tag-template.js"),
             context: { tag },
+        });
+    });
+}
+
+function renderKookboekKokPages(kookboekKoksResult, createPage) {
+
+    const kokrecepten = kookboekKoksResult.data.allMarkdownRemark.nodes;
+
+    // Alle unieke koks verzamelen
+    const koks = [...new Set(kokrecepten.flatMap(r => r.frontmatter.kok))];
+
+    // Voor elke kok een pagina maken
+    koks.forEach(kok => {
+        createPage({
+            path: `/kookboek/koks/${kok}`,
+            component: path.resolve("./src/templates/kok-template.js"),
+            context: { kok },
         });
     });
 }

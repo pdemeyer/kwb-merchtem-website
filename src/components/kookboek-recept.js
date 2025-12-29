@@ -17,7 +17,9 @@ const KookBoekRecept = ( {datum, title, kok, slug, foto, tags, html, excerpt, ch
         >
           <div>
          <p>{datum}</p>
-         <p><i>{kok}</i></p>
+         <div className="m-2 border border-gray-300 rounded-full px-4 py-1" key={kok}>
+          <Link to={`/kookboek/koks/${kok}`}>{kok}</Link>
+         </div>
          <div>
           {tags.map(tag => (
             <div className="m-2 border border-gray-300 rounded-full px-4 py-1" key={tag}>
