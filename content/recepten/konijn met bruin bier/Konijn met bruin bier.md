@@ -25,8 +25,7 @@ kookavond-datum: "2024-04-24"
 Kruid het konijn met peper en zout, laat een klont boter smelten in een kom en kleur er de stukken goudbruin in. Eens de stukken konijn aan alle kanten voldoende gekleurd zijn, haal je ze uit de kom.
 Zet het vuur wat lager en voeg er opnieuw wat boter aan toe.
 Voeg de fijn gesnipperde ui toe aan de gesmolten boter en laat hem zachtjes stoven tot hij glazig is (laat hem zeker niet bruin worden).
-Verwarm 3 flesjes van het bruine bier tot tegen het kookpunt.
-Wanneer de uien voldoende gestoofd zijn, deglaceer je de kom met het andere flesje bruine bier. Van zodra het bier bijna kookt, leg  je er de stukken konijn in en voeg je er het andere opgewarmde bier aan toe. Laat alles gedurende ongeveer een uur sudderen op een laag vuurtje.
+Wanneer de uien voldoende gestoofd zijn, deglaceer je de kom met flesje bruine bier. Van zodra het bier bijna kookt, leg  je er de stukken konijn in. Laat alles gedurende ongeveer een uur sudderen op een laag vuurtje.
 Wanneer het konijn gaar is, haal je de stukken uit de kom. Voeg volgens eigen smaak wat aardbeienconfituur toe en bind de saus met Maizena Express (bruine sauzen).
 Roer goed en voeg er opnieuw de stukken konijn aan toe zodat deze terug wat kunnen opwarmen.
 
