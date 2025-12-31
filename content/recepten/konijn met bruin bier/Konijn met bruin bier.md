@@ -10,14 +10,14 @@ kookavond-datum: "2024-04-24"
 
 ## Ingrediënten
 
-* 3 Volledige konijnen
+* 1 konijn
 * Boter
-* 6 Uien
+* 2 Uien
 * Tijm (enkele takjes)
 * Laurier
 * Aardbeienconfituur
 * Maizena Express (bruine sauzen) 
-* 4 Flesjes bruin bier (Postel)
+* 1 Flesjes bruin bier (Postel)
 
 
 ## Doen
