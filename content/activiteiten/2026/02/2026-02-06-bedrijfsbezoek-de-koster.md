@@ -7,5 +7,6 @@ pagetype: "activiteiten"
 location: "KWB lokaal-De Werkman (Kerkstraat, Merchtem Flemish Region, Belgium)"
 ---
 
+GEANNULEERD
 
 

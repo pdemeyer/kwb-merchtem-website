@@ -7,5 +7,6 @@ pagetype: "activiteiten"
 location: ""
 ---
 
+GEANNULEERD
 
 
