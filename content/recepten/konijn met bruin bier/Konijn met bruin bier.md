@@ -10,7 +10,7 @@ kookavond-datum: "2024-04-24"
 
 ## Ingrediënten
 
-* 1 Konijn
+* 1 Konijm
 * Boter
 * 2 Uien
 * Tijm (enkele takjes)
