@@ -4,7 +4,7 @@ date: "2025-12-29"
 kok: "Lieven Scheirlinckx"
 slug: "2024-04-24-konijn"
 pagetype: "kookboek"
-foto: "konijn.jpg"
+foto: "Konijn.jpg"
 tags: ["eenvoudig", "hoofdgerecht"]
 kookavond-datum: "2024-04-24"
 ---
