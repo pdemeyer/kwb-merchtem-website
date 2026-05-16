@@ -5,7 +5,7 @@ import * as React from 'react'
 function renderFullWidthContainer({title, maxNumCols, children}) {
 
    const classes = "grid grid-cols-1 gap-6 pb-6 pt-6 max-w-screen-xl mx-auto"
-   if (maxNumCols ==2) {
+   if (maxNumCols ===2) {
     classes = "grid grid-cols-1 lg:grid-cols-2 gap-6 pb-6 pt-6 max-w-screen-xl mx-auto"
    }
 
