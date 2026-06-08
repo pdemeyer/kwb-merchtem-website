@@ -5,15 +5,17 @@ slug: "2026-06-05-wk-pronostiek"
 featureUntil: "2026-07-10"
 pagetype: "nieuws"
 ---
-<h1>Waag jij ook graag je kans voor de KWB Merchtem WK pronostiek?</h1>
-Download het <a class="antialiased font-sans text-base leading-relaxed text-theme-link hover:text-theme-link-hover transition-colors font-medium" href="/media/algemeen/wk26-pronostiek-invulblad.xlsx">Excelbestand</a>, vul het in en stuur het naar
+<h1 class="text-xl">Waag jij ook graag je kans voor de KWB Merchtem WK pronostiek?</h1>
+Download het <a class="antialiased font-sans text-base leading-relaxed text-theme-link hover:text-theme-link-hover transition-colors font-medium" href="/media/algemeen/wk26-pronostiek-invulblad.xlsx">Excelbestand</a>, vul het in en stuur het naar <a class="antialiased font-sans text-base leading-relaxed text-theme-link hover:text-theme-link-hover transition-colors font-medium" href="voorzitter@kwbmerchtem.be">voorzitter@kwbmerchtem.be</a>.
 
 Op donderdag 11 juni start in VS, Mexico en Canada het WK Voetbal met de match tussen Mexico en Zuid-Afrika.
 
 De eerste twee wedstrijden kan je zeker volgen in de Werkman.
 
 Op 15 juni spelen de rode duivels tegen Egypte, te volgen vanuit de werkman om 21 uur.
+
 Op 21 juni spelen de Rode Duivels tegen Iran om 21 uur, te volgen vanuit de werkman.
+
 Op 27 juni spelen de Rode Duivels tegen Nieuw -Zeeland; om 5 uur in de ochtend, we bekijken nog of de werkman wakker zal zijn in dit vroege uur……
  
 
