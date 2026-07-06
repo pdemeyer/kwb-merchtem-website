@@ -27,6 +27,7 @@ const CorridaQuery = graphql`
   }
 }
 `
+
 // This component fetches the markdown data for the "corrida" page and renders it using MarkDownPageComponent
 const CorridaPaginaComponent = () => (
   <StaticQuery query={CorridaQuery} render={data => (

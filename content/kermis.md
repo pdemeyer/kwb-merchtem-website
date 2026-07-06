@@ -3,6 +3,7 @@ title: "KWB Merchtem Kermis 2026"
 slug: "kwb-kermis"
 pagetype: "kermis"
 itemtype: "voorpagina"
+image: "/media/kermis/2026/darts-2025.png"
 ---
 
 <div style="font-size: 24px; text-align: center;">

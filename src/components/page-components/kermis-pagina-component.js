@@ -32,7 +32,7 @@ const KermisQuery = graphql`
 const KermisPaginaComponent = () => (
   <StaticQuery query={KermisQuery} render={data => (
   <div>
-    <MarkDownPageComponent data={data} />
+    <MarkDownPageComponent data={data}  />
   </div>
 )} />
 );
