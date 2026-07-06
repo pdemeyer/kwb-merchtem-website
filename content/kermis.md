@@ -1,5 +1,5 @@
 ---
-title: "KWB Merchtem Kermis 2025"
+title: "KWB Merchtem Kermis 2026"
 slug: "kwb-kermis"
 pagetype: "kermis"
 itemtype: "voorpagina"
@@ -47,20 +47,20 @@ itemtype: "voorpagina"
 **Oproep:** helpende handen gezocht!
 Heb jij even tijd om te helpen tijdens één of meerdere van de kermisdagen? [Laat het ons weten!](#helpende) 
 
-## Vrijdag 15 augustus
+## Vrijdag 14 augustus
 29e KWB Corrida aan de sporthal van Merchtem. Info en inschrijven op [de Corrida pagina](/corrida)
 
-## Zondag 17 augustus
+## Zondag 16 augustus
 Van 10u tot 24u kermisterras.
 
-Ludieke AARDBEIwedstrijd, met doorlopend gratis springkasteel.
+Ludieke BLOEMENwedstrijd, met doorlopend gratis springkasteel.
 
 vanaf 16u BAKHARING of hamburgers
 
-## Maandag 18 augustus
+## Maandag 17 augustus
 vanaf 12u kermisterras en wedstrijden Petanque, Kaarten en Darts
 
-## Dinsdag 19 augustus
+## Dinsdag 18 augustus
 > **vanaf 10u:** 
     Jaarmarktterras
 > **vanaf 11u:** 
@@ -79,4 +79,4 @@ vanaf 12u kermisterras en wedstrijden Petanque, Kaarten en Darts
 ## Helpende handen gezocht!
 Om van het kermisweekend een succes te maken kunnen we op verschillende momenten wat hulp gebruiken. Heb jij wat tijd vrij tijdens de kermisdagen, op voorhand of bij de opruim en wil je je handen uit de mouwen steken? Vul het formulier hier onder in en laat ons weten wanneer je kan!
 
-<iframe width="640px" height="480px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=euFm6DXegUiijUPMx4gd4RwFHRGHWWxFrXidQh6WG1BUMkdUOEg2UzlPRFRaWktKVDAxUzlCMDVUNyQlQCN0PWcu&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+<iframe width="640px" height="480px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=euFm6DXegUiijUPMx4gd4RwFHRGHWWxFrXidQh6WG1BUOFZSNzM1SzdLQUdTSUxKOE5CT082NVhWVyQlQCN0PWcu&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>

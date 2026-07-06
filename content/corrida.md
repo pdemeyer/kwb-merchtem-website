@@ -2,7 +2,7 @@
 title: "KWB Merchtem Corrida"
 slug: "kwb-corrida"
 pagetype: "corrida"
-date: "2025-08-15"
+date: "2026-08-14"
 itemtype: "voorpagina"
 ---
 KWB Merchtem organiseert weer de corrida bij de start van Merchtem Kermis!
@@ -12,7 +12,7 @@ KWB Merchtem organiseert weer de corrida bij de start van Merchtem Kermis!
 </div>
 
 ## Corrida en (kinder)jogging
-Vrijdag 15 augustus 2025
+Vrijdag 14 augustus 2025
 sporthal Merchtem (Dendermondestraat)
 
 <p id="inschrijven"/>
@@ -28,12 +28,15 @@ We hebben een speciale internet-kassa. Hier verwachten we je voor de betaling en
 * Stap 1: Ga naar de kassa: zeg aan welke wedstrijd je wilt deelnemen, je betaalt en krijgt hier ook je borstnummer.
 * Stap 2: Ga met je eID kaart (identiteitskaart) en borstnummer naar één van de inschrijvingstafels om je borstnummer te laten registreren.
 **Inschrijven kan vanaf nu enkel ter plaatse vanaf 17.20u. in de sporthal**
-<!--
-<iframe width="640px" height="600px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__pyqwcdUREM2T044SlFVSFlNQktBWUJaMk85VzFVNi4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
 
-Geen invulformulier te zien? Klik [hier](https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__pyqwcdUREM2T044SlFVSFlNQktBWUJaMk85VzFVNi4u&embed=true).
+<!--
+<iframe width="640px" height="480px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=euFm6DXegUiijUPMx4gd4RwFHRGHWWxFrXidQh6WG1BUOFZSNzM1SzdLQUdTSUxKOE5CT082NVhWVyQlQCN0PWcu&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+
+Geen invulformulier te zien? Klik [hier](https://forms.office.com/Pages/ResponsePage.aspx?id=euFm6DXegUiijUPMx4gd4RwFHRGHWWxFrXidQh6WG1BUOFZSNzM1SzdLQUdTSUxKOE5CT082NVhWVyQlQCN0PWcu&embed=true).
 
 -->
+
+
 
 <p id="betaling" />
 
@@ -55,18 +58,18 @@ Gelieve gepast cash geld mee te brengen, ofwel Payconiq te gebruiken.
     Kinderjogging (8 tot 12 jaar)	
     700 m	
     € 5
-> - **18.30 u**	- [Parcours 3 km](/media/kermis/2025/corrida-omloop-3km.pdf)
+> - **18.30 u**	- [Parcours 3 km](/media/kermis/2026/corrida-omloop-3km.pdf)
     Jogging 
     3 km
     € 7
-> - **18.30 u**	- [Parcours 6 km](/media/kermis/2025/corrida-omloop-6km.pdf)
+> - **18.30 u**	- [Parcours 6 km](/media/kermis/2026/corrida-omloop-6km.pdf)
     Jogging 	
     6 km
     € 10
 _De jogging van 3 en 6 km wordt op hetzelfde ogenblik gelopen._
 _De jogging van 3 km vertrekt ongeveer 4 minuten na de jogging van 6 km._
 _Er is voor de 6 en de 12 km een waterstand voorzien onderweg._
-> - **19.30 u**	- [Parcours 12 km](/media/kermis/2025/corrida-omloop-12km.pdf)
+> - **19.30 u**	- [Parcours 12 km](/media/kermis/2026/corrida-omloop-12km.pdf)
     Corrida	  
     12 km
     € 10
