@@ -19,6 +19,13 @@ const kermisQuery = graphql`
           title
           pagetype
           itemtype
+          image {
+            id
+            sourceInstanceName
+            absolutePath
+            relativePath
+            publicURL
+          }
         }
         excerpt
         html
