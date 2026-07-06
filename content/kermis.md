@@ -2,6 +2,7 @@
 title: "KWB Merchtem Kermis 2026"
 slug: "kwb-kermis"
 pagetype: "kermis"
+date: "2026-08-14"
 itemtype: "voorpagina"
 image: "darts-2025.png"
 ---

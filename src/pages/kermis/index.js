@@ -1,7 +1,6 @@
 import * as React from 'react'
 import Layout from '../../components/cards/layout'
 import Seo from '../../components/seo'
-import KermisPagina from "../../components/kermis-pagina";
 import KermisPaginaComponent from "../../components/page-components/kermis-pagina-component";
 import KermisCorridaHeader from '../../components/kermis-corrida-header';
 
