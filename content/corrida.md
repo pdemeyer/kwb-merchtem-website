@@ -12,7 +12,7 @@ KWB Merchtem organiseert weer de corrida bij de start van Merchtem Kermis!
 </div>
 
 ## Corrida en (kinder)jogging
-Vrijdag 14 augustus 2025
+Vrijdag 14 augustus 2026
 sporthal Merchtem (Dendermondestraat)
 
 <p id="inschrijven"/>

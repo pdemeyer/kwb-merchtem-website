@@ -11,6 +11,7 @@ itemtype: "voorpagina"
 
 <p id="krant" />
 
+<!--
 <div class="grid-container">
     <div class="list-col-3">
         <a href="/media/kermis/2025/Krant-blad1-2025.jpg">
@@ -41,6 +42,7 @@ itemtype: "voorpagina"
       </a>
     </div>
 </div>
+-->
 
 <p id="activiteiten" />
 

@@ -16,7 +16,22 @@ const KermisCorridaHeader = ({showSectionTitle}) => {
   if (showSectionTitle) {
   return (
     <FullWidthContainer>
-      <PageListSection sectionTitle={"Kermis en Corrida 2025"}  >
+      <PageListSection sectionTitle={"Kermis en Corrida 2026"}  >
+      </PageListSection>
+    </FullWidthContainer>
+  )
+}
+else {
+  return (
+    <FullWidthContainer>
+      <PageListSection>
+      </PageListSection>
+    </FullWidthContainer>
+  )
+}};
+
+{/*
+  
         <ListCol2Item >
           <VisualDisplay linkTo="/corrida" imgUrl={corridaAffiche} altName={corridaAltName} />
         </ListCol2Item>
@@ -31,23 +46,18 @@ const KermisCorridaHeader = ({showSectionTitle}) => {
         <ListCol2Item  >
           <VisualDisplay linkTo="/kermis" imgUrl={kermisAffiche} altName={kermisAltName} />
         </ListCol2Item>
-      </PageListSection>
-    </FullWidthContainer>
-  )
-}
-else {
-  return (
-    <FullWidthContainer>
-      <PageListSection>
+
+
+
+
+
         <ListCol2Item >
           <VisualDisplay linkTo="/corrida" imgUrl={corridaAffiche} altName={corridaAltName} />
         </ListCol2Item>
         <ListCol2Item >
           <VisualDisplay linkTo="/kermis" imgUrl={kermisAffiche} altName={kermisAltName} />
         </ListCol2Item>
-      </PageListSection>
-    </FullWidthContainer>
-  )
-}};
+
+  */}
 
 export default KermisCorridaHeader;
