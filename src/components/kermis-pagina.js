@@ -58,6 +58,7 @@ const renderKermisNode = (data) => {
   )
 }
 
+
 const KermisPagina = () => (
   <StaticQuery query={kermisQuery} render={data => (
   <div>
