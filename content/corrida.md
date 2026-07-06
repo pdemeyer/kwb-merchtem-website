@@ -4,7 +4,7 @@ slug: "kwb-corrida"
 pagetype: "corrida"
 date: "2026-08-14"
 itemtype: "voorpagina"
-image: "/media/corrida/2026/corrida-2025.png"
+image: "corrida-2025.png"
 ---
 KWB Merchtem organiseert weer de corrida bij de start van Merchtem Kermis!
 
