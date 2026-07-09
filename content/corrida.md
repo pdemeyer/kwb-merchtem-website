@@ -19,8 +19,8 @@ sporthal Merchtem (Dendermondestraat)
 <p id="inschrijven"/>
 
 ### Inschrijven
-Vooraf online inschrijven kan tot 13 augustus. Nadien kan dit nog ter plaatse op 15 augustus vanaf 17.20u. in de sporthal van Merchtem. 
-Opgelet: de online inschrijvingen zijn afgesloten. Kom je toch graag mee lopen? Schrijf je dan in op 15 augustus vanaf 17.20u in de sporthal van Merchtem.
+Vooraf online inschrijven kan tot 13 augustus. Nadien kan dit nog ter plaatse op 14 augustus vanaf 17.20u. in de sporthal van Merchtem. 
+Opgelet: de online inschrijvingen zijn afgesloten. Kom je toch graag mee lopen? Schrijf je dan in op 14 augustus vanaf 17.20u in de sporthal van Merchtem.
 
 ### Wat moet je de dag van de corrida nog doen als je vooraf hebt ingeschreven?
 We hebben een speciale internet-kassa. Hier verwachten we je voor de betaling en voor het afhalen van je nummer. Alles is in één keer geregeld.
@@ -30,14 +30,9 @@ We hebben een speciale internet-kassa. Hier verwachten we je voor de betaling en
 * Stap 2: Ga met je eID kaart (identiteitskaart) en borstnummer naar één van de inschrijvingstafels om je borstnummer te laten registreren.
 **Inschrijven kan vanaf nu enkel ter plaatse vanaf 17.20u. in de sporthal**
 
-<!--
-<iframe width="640px" height="480px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=euFm6DXegUiijUPMx4gd4RwFHRGHWWxFrXidQh6WG1BUOFZSNzM1SzdLQUdTSUxKOE5CT082NVhWVyQlQCN0PWcu&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+<iframe width="640px" height="480px" src="https://forms.office.com/pages/responsepage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__pyqwcdUNjRLREE0UE5HSU84VE4xMExHTkdIMjNLRi4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
 
-Geen invulformulier te zien? Klik [hier](https://forms.office.com/Pages/ResponsePage.aspx?id=euFm6DXegUiijUPMx4gd4RwFHRGHWWxFrXidQh6WG1BUOFZSNzM1SzdLQUdTSUxKOE5CT082NVhWVyQlQCN0PWcu&embed=true).
-
--->
-
-
+Geen invulformulier te zien? Klik [hier](https://forms.office.com/pages/responsepage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__pyqwcdUNjRLREE0UE5HSU84VE4xMExHTkdIMjNLRi4u&embed=true).
 
 <p id="betaling" />
 
