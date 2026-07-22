@@ -19,7 +19,7 @@ sporthal Merchtem (Dendermondestraat)
 <p id="inschrijven"/>
 
 ### Inschrijven
-Vooraf online inschrijven kan tot 13 augustus. Nadien kan dit nog ter plaatse op 14 augustus vanaf 17.20u. in de sporthal van Merchtem. 
+Vooraf online inschrijven kan tot 12 augustus. Nadien kan dit nog ter plaatse op 14 augustus vanaf 17.20u. in de sporthal van Merchtem. 
 
 <iframe width="640px" height="480px" src="https://forms.office.com/pages/responsepage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__pyqwcdUNjRLREE0UE5HSU84VE4xMExHTkdIMjNLRi4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
 

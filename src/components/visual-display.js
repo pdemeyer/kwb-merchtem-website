@@ -7,7 +7,7 @@ const VisualDisplay = ({linkTo, imgUrl, altName} ) => {
     <div className="post-picture-picture">
       <a href={linkTo} className="post-picture-link">
      <img src={affiche} alt={{altName}} 
-      style={{ height: "300px" }}  />
+      style={{ height: "400px" }}  />
       </a>
     </div>
   );
