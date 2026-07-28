@@ -39,7 +39,8 @@ const KermisQuery = graphql`
 const KermisPaginaComponent = () => (
   <StaticQuery query={KermisQuery} render={data => (
   <div>
-    <MarkDownPageComponent data={data}  />
+    <MarkDownPageComponent data={data} imgUrls={["/media/kermis/2026/Krant-blad1-2026.jpg", 
+            "/media/kermis/2026/Krant-blad2-2026.jpg", "/media/kermis/2026/Krant-blad3-2026.jpg", "/media/kermis/2026/Krant-blad4-2026.jpg"]} />
   </div>
 )} />
 );

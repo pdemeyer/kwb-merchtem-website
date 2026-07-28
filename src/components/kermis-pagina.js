@@ -38,7 +38,6 @@ const kermisQuery = graphql`
 
 const renderKermisPage = (data) => {
   
-  console.log(data)
   return (
     <div>
       {data.data.allMarkdownRemark.edges.map(({ node }) => (
