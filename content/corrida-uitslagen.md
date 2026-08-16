@@ -9,6 +9,16 @@ itemtype: "voorpagina"
 <a href="/corrida#inschrijven">Inschrijven</a>  -|- <a href="/corrida#betaling">Betalen</a> -|- <a href="/corrida#uurschema">Uurschema</a> -|- <a href="uitslagen">Uitslagen</a>
 </div>
 
+## 2026
+Bekijk of download hier de uitslagen van de Corrida 2025 per wedstrijd.
+
+*  [Uitslag 2026 kinderjogging -6](/media/corrida/2026/uitslag_-6j.pdf)
+*  [Uitslag 2026 kinderjogging 6-7](/media/corrida/2026/uitslag_6-7j.pdf)
+*  [Uitslag 2026 kinderjogging +8](/media/corrida/2026/uitslag_+8j.pdf)
+*  [Uitslag 2026 3 km](/media/corrida/2026/uitslag_3km.pdf)
+*  [Uitslag 2026 6 km](/media/corrida/2026/uitslag_6km.pdf)
+*  [Uitslag 2026 Corrida (12km)](/media/corrida/2026/uitslag_corrida.pdf)
+
 ## 2025
 Bekijk of download hier de uitslagen van de Corrida 2025 per wedstrijd.
 
