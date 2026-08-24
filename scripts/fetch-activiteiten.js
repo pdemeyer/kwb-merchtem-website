@@ -1,3 +1,6 @@
+
+//execute this script with: "node scripts/fetch-activiteiten.js" from the root of the project
+
 // fetch-calendar.js
 require("dotenv").config();
 
