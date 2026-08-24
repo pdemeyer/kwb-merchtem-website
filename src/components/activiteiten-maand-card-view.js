@@ -64,14 +64,14 @@ function renderAlleMaanden(groupedData) {
 export function getWorkYearMonths(today = new Date()) {
   const year = today.getFullYear();
   const septThisYear = new Date(year, 8, 1); // 1 september
-  const septNextYear = new Date(year + 1, 8, 30); // 30 september volgend jaar
+  const septNextYear = new Date(year + 1, 9, 31); // 31 oktober volgend jaar
 
   // Als vandaag vóór september is, dan zit je nog in vorig werkjaar
   const start = isBefore(today, septThisYear)
     ? new Date(year - 1, 8, 1)
     : septThisYear;
 
-  const end = new Date(start.getFullYear() + 1, 8, 30);
+  const end = new Date(start.getFullYear() + 1, 9, 31);
 
   if (!isAfter(today, start) || !isBefore(today, end)) {
     throw new Error('Vandaag valt buiten het werkjaar.');
