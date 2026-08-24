@@ -4,7 +4,7 @@ import LaatsteNieuwsOverzicht from "../components/laatstenieuws";
 import MaandelijksNieuws from "../components/maandelijksnieuws";
 import ContactZoeker from "../components/contactzoeker";
 import AlgemeenKwbComponent from "../components/algemeenkwb-component";
-import DebugLogger from "../components/debug-logger";
+//import DebugLogger from "../components/debug-logger";
 import Seo from "../components/seo";
 
 
@@ -15,11 +15,9 @@ const IndexPage = () => {
       <MaandelijksNieuws />
       <ContactZoeker />
       <AlgemeenKwbComponent />
-      <DebugLogger />
     </Layout>
   );
 }
-
 
 export const Head = () => <Seo title="Home Page" />
 
