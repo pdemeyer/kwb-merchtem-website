@@ -20,6 +20,10 @@ function sanitizeFilename(name) {
   return name.replace(/[^a-z0-9\-]/gi, "-").toLowerCase();
 }
 
+function sanitizeMarkdownContent(content) {
+  return content.replace(/"/g, '\\"');
+}
+
 function formatDate(date) {
   return date.toISOString();
 }
@@ -99,14 +103,14 @@ console.log("TOKEN", GRAPH_TOKEN);
       //console.log("Attach: ", event.attach); // kan een URL of base64 zijn
 
 
-      const title = event.summary || "Untitled Event";
+      const title = sanitizeMarkdownContent(event.summary) || "Untitled Event";
 
       const dateOnly = formatDateOnly(event.start);
       const timeOnly = formatTimeOnly(event.start);
       const filename = `${dateOnly}-${sanitizeFilename(title)}.md`;
       const filePath = path.join(outputDir, filename);
 
-      let description = event.description || "";
+      let description = sanitizeMarkdownContent(event.description) || "";
 
       /*
       if (containsCID(description)) {

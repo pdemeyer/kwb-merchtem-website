@@ -18,10 +18,10 @@ const IndexPage = () => {
 
       <FullWidthContainer>
       <HorizontalCard 
-                cardHeaderTitle="Kalender 2025-2026"
+                cardHeaderTitle="Kalender 2026-2027"
                 contentTitle="Volledige kalender om te downloaden"
-                imgUrl="/media/kalender/2025-kalender-maand-per-maand.jpg"
-                linkUrl="/media/kalender/2025-kalender-maand-per-maand.pdf"
+                imgUrl="/media/kalender/2026-kalender-maand-per-maand.jpg"
+                linkUrl="/media/kalender/2026-kalender-maand-per-maand.pdf"
                 linkText={"Download" }  
                 className="h-50"
               /> 
