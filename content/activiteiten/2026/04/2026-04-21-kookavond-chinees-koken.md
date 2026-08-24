@@ -1,8 +1,8 @@
 ---
-title: "Kookavond "Chinees koken""
+title: "Kookavond 'Chinees koken'"
 date: "2026-04-21"
 time: "19:04"
-slug: "2026-04-21-kookavond--chinees-koken-"
+slug: "2026-04-21-kookavond-chinees-koken"
 pagetype: "activiteiten"
 location: "Kerkeboomgaard, Merchtem"
 ---
