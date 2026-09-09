@@ -7,15 +7,16 @@ pagetype: "activiteiten"
 location: "KWB lokaal-De Werkman (Kerkstraat, Merchtem Flemish Region, Belgium)"
 ---
 
-Wie wordt kaartkampioen ‘wiezen’ 2027?
+Het kaartkampioenschap ‘wiezen’.
+Speel je graag wiezen, noteer alvast de volgende avonden in je agenda.
+We starten telkens om 20 u. in het KWB-lokaal
 
-
-
-De kaarten zijn geschud, we kunnen delen, vragen, meegaan troel of miserie spelen, zelfs n’en abondance kan er inzitten.
-
-De weg naar kaartkampioen 2027 ligt open voor iedere speler.
-
-Wie durft er meegaan?
-
+Vrijdag 9 oktober 2026
+Vrijdag 20 november 2026
+Vrijdag 4 december 2026
+Vrijdag 8 januari 2027
+Vrijdag 5 februari 2027
+Vrijdag 12 maart 2027
+Finale vrijdag 16 april 2027
 
 

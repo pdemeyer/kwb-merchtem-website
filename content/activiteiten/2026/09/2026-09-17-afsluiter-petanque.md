@@ -9,5 +9,10 @@ location: "KWB lokaal-De Werkman (Kerkstraat, Merchtem Flemish Region, Belgium)"
 
 We spelen petanque op de pleinen naast het KWB-lokaal.
 We starten om 19.30uur
-Iedereen is welkom om een balleke te gooien, zo kort mogelijk tegen het cochonnet
+Aangezien het de laatste petanque avond is van dit seizoen,
+sluiten we af met een natje en een droogje!
+Natuurlijk spelen we daartussen ook nog petanque
+iedereen welkom!!!!
+
+
 
