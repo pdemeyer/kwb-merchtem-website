@@ -290,8 +290,7 @@ export default function TopNavbar() {
   const navItems = [
     { label: "Activiteiten", path: "/activiteiten" },
     { label: "Kleine Raak", path: "/kleine-raken" },
-    { label: "Kermis", path: "/kermis" },
-    { label: "Corrida", path: "/corrida" },
+    { label: "Mysterie van de Nacht", path: "/mysterie" },
     { label: "Bestuur", path: "/bestuur" },
     { label: "Nieuws", path: "/nieuws" },
     { label: "Over kwb Merchtem", path: "/over" },
