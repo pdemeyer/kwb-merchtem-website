@@ -15,7 +15,7 @@ Mysterie van de Nacht: wandeltocht met griezelen en schrikken!
 ## Waar en wanneer?
 Zaterdag 24 oktober. Vertrekken tussen 18u en 20u.
 
-Parochiezaal Peizegem (... - adres).
+Parochiezaal Peizegem (Nieuwbaan 69, 1785 Merchtem).
 
 <p id="inschrijven"/>
 
