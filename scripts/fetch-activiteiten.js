@@ -21,6 +21,7 @@ function sanitizeFilename(name) {
 }
 
 function sanitizeMarkdownContent(content) {
+  if (!content) return "";
   return content.replace(/"/g, '\\"');
 }
 
