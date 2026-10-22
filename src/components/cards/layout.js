@@ -1,5 +1,6 @@
 import * as React from 'react'
 import FooterWithLogo from '../footer-with-logo'
+import AnnouncementBanner from '../announcement-banner'
 
 import hoofdLogo from "../../images/KWB_Raak_rood_geel.png";
 
@@ -15,6 +16,7 @@ const Layout = ({ pageTitle, showLogo=false, children, themeName="default" }) =>
     <div className={`${themeName}-theme bg-theme-gradient text-theme-text min-h-screen`}>
     <main >
       <TopNavbar />
+      <AnnouncementBanner />
       <div className="w-full bg-theme-header-bg text-theme-header-text py-6 flex justify-center items-center">
         <figure>
           { showLogo && 
