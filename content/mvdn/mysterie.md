@@ -6,15 +6,24 @@ date: "2026-09-15"
 itemtype: "voorpagina"
 image: "mysterie-2.jpg"
 ---
-## Belangrijke mededeling!
-Belangrijk: We volgen de weersvoorspellingen voor de Mysterie van de Nacht-tocht van 24 oktober nauwgezet op.
-Momenteel is het nog te vroeg om een definitieve beslissing te nemen.
-Morgennamiddag brengen we jullie op de hoogte of de tocht kan doorgaan zoals gepland.
-Hou dus zeker jullie mailbox/facebook en website in de gaten.
+## Annulatie Mysterie van de Nacht 2026!
+
+We hadden er samen enorm naar uitgekeken, maar helaas moeten we melden dat de Mysterie van de Nacht van 24 oktober 2026 niet kan doorgaan.
+De verwachte regenval zorgt ervoor dat verschillende buitenposten niet veilig bemand kunnen worden en dat delen van het parcours te nat en moeilijk toegankelijk worden.
+
+Omdat veiligheid voor deelnemers, medewerkers en vrijwilligers voorop staat, hebben we beslist het evenement te annuleren.
+We beseffen dat dit een grote teleurstelling is en bieden hiervoor onze oprechte excuses aan. 
+Het inschrijvingsgeld zal de komende dagen volledig teruggestort worden. 
+U hoeft hiervoor zelf niets te ondernemen.
+
+Bedankt voor uw begrip en voor het vertrouwen dat u in ons stelde.
+We hopen u in de toekomst opnieuw te mogen verwelkomen op een van onze activiteiten.
+
+We kunnen je al meedelen dat 30 oktober 2027 het mysterie van de nacht zal doorgaan in Peizegem. Hopelijk zijn de weergoden ons dan wel gunstig gezind.
+Maak er toch nog een fijn weekendje van.
 
 
 ## Mysterie van de Nacht: wandeltocht met griezelen en schrikken!
-
 
 <div style="font-size: 24px; text-align: center;">
     <a class="text-theme-link hover:text-theme-link-hover" href="#inschrijven">Inschrijven</a>  -|- <a class="text-theme-link hover:text-theme-link-hover" href="#betaling">Betalen</a> 
