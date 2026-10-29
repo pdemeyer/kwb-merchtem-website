@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-const announcementId = 'urgent-message-2026-10-22'
+const announcementId = 'urgent-message-2026-10-23'
 const dismissedKey = `kwb-dismissed-announcement-${announcementId}`
 
 const AnnouncementBanner = () => {
@@ -30,9 +30,7 @@ const AnnouncementBanner = () => {
           <span className="font-extrabold uppercase tracking-wide">
             Dringende mededeling:
           </span>{' '}
-          We volgen de weersvoorspellingen nauwgezet op voor het Mysterie van de Nacht. 
-          De beslissing of alles kan doorgaan wordt verwacht te worden genomen op vrijdagnamiddag. 
-          Meer info op <a href="/mysterie/" className="underline">deze pagina</a>.
+          Het Mysterie van de Nacht 2026 is geannuleerd. Meer info op <a href="/mysterie/" className="underline">deze pagina</a>.
         </p>
         <button
           type="button"
