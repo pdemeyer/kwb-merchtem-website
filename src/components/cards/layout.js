@@ -17,6 +17,7 @@ const Layout = ({ pageTitle, showLogo=false, children, themeName="default" }) =>
     <main >
       <TopNavbar />
       {/*
+      // Uncomment the following line to enable the announcement banner
       <AnnouncementBanner />
       */}
       <div className="w-full bg-theme-header-bg text-theme-header-text py-6 flex justify-center items-center">
