@@ -32,7 +32,7 @@ const MaandelijksNieuws = () => (
            }
          `}
          render={data => (
-    <FullWidthContainer isBgFilled={true}>
+    <FullWidthContainer isBgFilled={true} maxNumCols={2}>
       {data.allMarkdownRemark.edges.map(({ node }) => (
 
         <HorizontalCard 
